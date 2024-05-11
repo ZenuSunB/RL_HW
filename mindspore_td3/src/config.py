@@ -27,8 +27,8 @@ eval_env_params = {'name': 'FightingiceEnv-v0'}
 policy_params = {
     "state_space_dim": 144,
     "action_space_dim": 40,
-    "hidden_size1": 512,
-    "hidden_size2": 512,
+    "hidden_size1": 256,
+    "hidden_size2": 256,
     "compute_type": ms.float32,
 }
 

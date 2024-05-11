@@ -117,12 +117,15 @@ class TD3Policy:
             self.tanh = P.Tanh()
             self.soft_max = ops.Softmax()
             self.relu = P.ReLU()
+            self.gumbel_softmax = ops.gumbel_softmax
+            
 
         def construct(self, x):
             x = self.relu(self.dense1(x))
             x = self.relu(self.dense2(x))
             # x = self.tanh(self.dense3(x))
-            x = self.soft_max(self.dense3(x))
+            # x = self.soft_max(self.dense3(x))
+            x = self.gumbel_softmax(self.dense3(x),0.01,True)
             return x
 
     class TD3CriticNet(nn.Cell):
@@ -367,13 +370,11 @@ class TD3Learner(Learner):
             self.soft_max = ops.Softmax()
             self.expand_dims = P.ExpandDims()
             self.indices = Parameter(initializer(self.expand_dims(ops.arange(0,40),0),[1,40], mindspore.int32), "indices",False,)
-    
         def construct(self, obs):
             """calculate the actor loss"""
             action_probs = self.actor_net(obs)
-            action_soft_onehot = self.soft_max(action_probs*1000000.0) 
-
-            action_soft_onehot_M_indices = action_soft_onehot *  self.indices
+            # action_soft_onehot = self.soft_max(action_probs* self.beta) 
+            action_soft_onehot_M_indices = action_probs * self.indices
             action = action_soft_onehot_M_indices.sum(axis=-1,keepdims=True) 
             q_values = self.critic_net(obs, action)
             q_values = - q_values
