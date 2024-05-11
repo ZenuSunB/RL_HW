@@ -353,8 +353,8 @@ class TD3Learner(Learner):
             target_q_values = self.min(target_q1_values, target_q2_values)
             
             td_targets = rewards + self.gamma * (1.0 - done) * target_q_values
+            action = self.squeeze(action)
             action_soft_onehot = self.one_hot(action,40,Tensor(1.0, mindspore.float32), Tensor(0.0, mindspore.float32))
-            action_soft_onehot = self.squeeze(action_soft_onehot)
             # predicted values
             pred_q1 = self.critic_net_1(obs, action_soft_onehot)
             pred_q2 = self.critic_net_2(obs, action_soft_onehot)
