@@ -1,0 +1,396 @@
+# 1.This file shows the parsed IR info when graph evaluating failed to help find the problem.
+# 2.You can search the last `------------------------>` to the node which is inferred failed.
+# 3.Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.dat to get more instructions.
+# ===============================================================================
+
+# [No.1] train_one_episode_wrapper.56
+# In file /app/src/td3_trainer.py(77)/    def train_one_episode(self):/
+funcgraph fg_56(
+        %para1 : Ref[Tensor(Bool)][]    # init_flag
+        , %para2 : Ref[Tensor(I32)][1]    # steps
+        , %para3 : Ref[Tensor(F32)][50000, 144]    # actors.replay_buffer.buffer_0
+        , %para4 : Ref[Tensor(I32)][50000, 1]    # actors.replay_buffer.buffer_1
+        , %para5 : Ref[Tensor(F32)][50000, 1]    # actors.replay_buffer.buffer_2
+        , %para6 : Ref[Tensor(F32)][50000, 144]    # actors.replay_buffer.buffer_3
+        , %para7 : Ref[Tensor(Bool)][50000, 1]    # actors.replay_buffer.buffer_4
+        , %para8 : Ref[Tensor(I32)][]    # actors.replay_buffer.count
+        , %para9 : Ref[Tensor(I32)][]    # actors.replay_buffer.head
+        , %para10 : Ref[Tensor(I32)][1]    # learner.step
+        , %para11 : Ref[Tensor(F32)][128, 144]    # learner.critic_net_1.dense1.weight
+        , %para12 : Ref[Tensor(F32)][128]    # learner.critic_net_1.dense1.bias
+        , %para13 : Ref[Tensor(F32)][256, 168]    # learner.critic_net_1.dense2.weight
+        , %para14 : Ref[Tensor(F32)][256]    # learner.critic_net_1.dense2.bias
+        , %para15 : Ref[Tensor(F32)][1, 256]    # learner.critic_net_1.dense3.weight
+        , %para16 : Ref[Tensor(F32)][1]    # learner.critic_net_1.dense3.bias
+        , %para17 : Ref[Tensor(F32)][128, 144]    # learner.critic_net_2.dense1.weight
+        , %para18 : Ref[Tensor(F32)][128]    # learner.critic_net_2.dense1.bias
+        , %para19 : Ref[Tensor(F32)][256, 168]    # learner.critic_net_2.dense2.weight
+        , %para20 : Ref[Tensor(F32)][256]    # learner.critic_net_2.dense2.bias
+        , %para21 : Ref[Tensor(F32)][1, 256]    # learner.critic_net_2.dense3.weight
+        , %para22 : Ref[Tensor(F32)][1]    # learner.critic_net_2.dense3.bias
+        , %para23 : Ref[Tensor(I32)][1]    # learner.soft_updater.steps
+        , %para24 : Ref[Tensor(F32)][128, 144]    # learner.actor_net.dense1.weight
+        , %para25 : Ref[Tensor(F32)][128]    # learner.actor_net.dense1.bias
+        , %para26 : Ref[Tensor(F32)][256, 128]    # learner.actor_net.dense2.weight
+        , %para27 : Ref[Tensor(F32)][256]    # learner.actor_net.dense2.bias
+        , %para28 : Ref[Tensor(F32)][40, 256]    # learner.actor_net.dense3.weight
+        , %para29 : Ref[Tensor(F32)][40]    # learner.actor_net.dense3.bias
+        , %para30 : Ref[Tensor(F32)][128, 144]    # learner.target_actor_net.dense1.weight
+        , %para31 : Ref[Tensor(F32)][128]    # learner.target_actor_net.dense1.bias
+        , %para32 : Ref[Tensor(F32)][256, 128]    # learner.target_actor_net.dense2.weight
+        , %para33 : Ref[Tensor(F32)][256]    # learner.target_actor_net.dense2.bias
+        , %para34 : Ref[Tensor(F32)][40, 256]    # learner.target_actor_net.dense3.weight
+        , %para35 : Ref[Tensor(F32)][40]    # learner.target_actor_net.dense3.bias
+        , %para36 : Ref[Tensor(F32)][128, 144]    # learner.target_critic_net_1.dense1.weight
+        , %para37 : Ref[Tensor(F32)][128]    # learner.target_critic_net_1.dense1.bias
+        , %para38 : Ref[Tensor(F32)][256, 168]    # learner.target_critic_net_1.dense2.weight
+        , %para39 : Ref[Tensor(F32)][256]    # learner.target_critic_net_1.dense2.bias
+        , %para40 : Ref[Tensor(F32)][1, 256]    # learner.target_critic_net_1.dense3.weight
+        , %para41 : Ref[Tensor(F32)][1]    # learner.target_critic_net_1.dense3.bias
+        , %para42 : Ref[Tensor(F32)][128, 144]    # learner.target_critic_net_2.dense1.weight
+        , %para43 : Ref[Tensor(F32)][128]    # learner.target_critic_net_2.dense1.bias
+        , %para44 : Ref[Tensor(F32)][256, 168]    # learner.target_critic_net_2.dense2.weight
+        , %para45 : Ref[Tensor(F32)][256]    # learner.target_critic_net_2.dense2.bias
+        , %para46 : Ref[Tensor(F32)][1, 256]    # learner.target_critic_net_2.dense3.weight
+        , %para47 : Ref[Tensor(F32)][1]    # learner.target_critic_net_2.dense3.bias
+        , %para48 : Ref[Tensor(F32)][1]    # learner.critic_train.optimizer.beta1_power
+        , %para49 : Ref[Tensor(F32)][1]    # learner.critic_train.optimizer.beta2_power
+        , %para50 : Ref[Tensor(F32)][1]    # learner.actor_train.optimizer.beta1_power
+        , %para51 : Ref[Tensor(F32)][1]    # learner.actor_train.optimizer.beta2_power
+        , %para52 : Ref[Tensor(F32)][128, 144]    # learner.critic_train.optimizer.moment1.critic_net_1.dense1.weight
+        , %para53 : Ref[Tensor(F32)][128]    # learner.critic_train.optimizer.moment1.critic_net_1.dense1.bias
+        , %para54 : Ref[Tensor(F32)][256, 168]    # learner.critic_train.optimizer.moment1.critic_net_1.dense2.weight
+        , %para55 : Ref[Tensor(F32)][256]    # learner.critic_train.optimizer.moment1.critic_net_1.dense2.bias
+        , %para56 : Ref[Tensor(F32)][1, 256]    # learner.critic_train.optimizer.moment1.critic_net_1.dense3.weight
+        , %para57 : Ref[Tensor(F32)][1]    # learner.critic_train.optimizer.moment1.critic_net_1.dense3.bias
+        , %para58 : Ref[Tensor(F32)][128, 144]    # learner.critic_train.optimizer.moment1.critic_net_2.dense1.weight
+        , %para59 : Ref[Tensor(F32)][128]    # learner.critic_train.optimizer.moment1.critic_net_2.dense1.bias
+        , %para60 : Ref[Tensor(F32)][256, 168]    # learner.critic_train.optimizer.moment1.critic_net_2.dense2.weight
+        , %para61 : Ref[Tensor(F32)][256]    # learner.critic_train.optimizer.moment1.critic_net_2.dense2.bias
+        , %para62 : Ref[Tensor(F32)][1, 256]    # learner.critic_train.optimizer.moment1.critic_net_2.dense3.weight
+        , %para63 : Ref[Tensor(F32)][1]    # learner.critic_train.optimizer.moment1.critic_net_2.dense3.bias
+        , %para64 : Ref[Tensor(F32)][128, 144]    # learner.critic_train.optimizer.moment2.critic_net_1.dense1.weight
+        , %para65 : Ref[Tensor(F32)][128]    # learner.critic_train.optimizer.moment2.critic_net_1.dense1.bias
+        , %para66 : Ref[Tensor(F32)][256, 168]    # learner.critic_train.optimizer.moment2.critic_net_1.dense2.weight
+        , %para67 : Ref[Tensor(F32)][256]    # learner.critic_train.optimizer.moment2.critic_net_1.dense2.bias
+        , %para68 : Ref[Tensor(F32)][1, 256]    # learner.critic_train.optimizer.moment2.critic_net_1.dense3.weight
+        , %para69 : Ref[Tensor(F32)][1]    # learner.critic_train.optimizer.moment2.critic_net_1.dense3.bias
+        , %para70 : Ref[Tensor(F32)][128, 144]    # learner.critic_train.optimizer.moment2.critic_net_2.dense1.weight
+        , %para71 : Ref[Tensor(F32)][128]    # learner.critic_train.optimizer.moment2.critic_net_2.dense1.bias
+        , %para72 : Ref[Tensor(F32)][256, 168]    # learner.critic_train.optimizer.moment2.critic_net_2.dense2.weight
+        , %para73 : Ref[Tensor(F32)][256]    # learner.critic_train.optimizer.moment2.critic_net_2.dense2.bias
+        , %para74 : Ref[Tensor(F32)][1, 256]    # learner.critic_train.optimizer.moment2.critic_net_2.dense3.weight
+        , %para75 : Ref[Tensor(F32)][1]    # learner.critic_train.optimizer.moment2.critic_net_2.dense3.bias
+        , %para76 : Ref[Tensor(F32)][128, 144]    # learner.critic_train.optimizer.vhat.critic_net_1.dense1.weight
+        , %para77 : Ref[Tensor(F32)][128]    # learner.critic_train.optimizer.vhat.critic_net_1.dense1.bias
+        , %para78 : Ref[Tensor(F32)][256, 168]    # learner.critic_train.optimizer.vhat.critic_net_1.dense2.weight
+        , %para79 : Ref[Tensor(F32)][256]    # learner.critic_train.optimizer.vhat.critic_net_1.dense2.bias
+        , %para80 : Ref[Tensor(F32)][1, 256]    # learner.critic_train.optimizer.vhat.critic_net_1.dense3.weight
+        , %para81 : Ref[Tensor(F32)][1]    # learner.critic_train.optimizer.vhat.critic_net_1.dense3.bias
+        , %para82 : Ref[Tensor(F32)][128, 144]    # learner.critic_train.optimizer.vhat.critic_net_2.dense1.weight
+        , %para83 : Ref[Tensor(F32)][128]    # learner.critic_train.optimizer.vhat.critic_net_2.dense1.bias
+        , %para84 : Ref[Tensor(F32)][256, 168]    # learner.critic_train.optimizer.vhat.critic_net_2.dense2.weight
+        , %para85 : Ref[Tensor(F32)][256]    # learner.critic_train.optimizer.vhat.critic_net_2.dense2.bias
+        , %para86 : Ref[Tensor(F32)][1, 256]    # learner.critic_train.optimizer.vhat.critic_net_2.dense3.weight
+        , %para87 : Ref[Tensor(F32)][1]    # learner.critic_train.optimizer.vhat.critic_net_2.dense3.bias
+        , %para88 : Ref[Tensor(F32)][128, 144]    # learner.actor_train.optimizer.moment1.actors.collect_policy.dense1.weight
+        , %para89 : Ref[Tensor(F32)][128]    # learner.actor_train.optimizer.moment1.actors.collect_policy.dense1.bias
+        , %para90 : Ref[Tensor(F32)][256, 128]    # learner.actor_train.optimizer.moment1.actors.collect_policy.dense2.weight
+        , %para91 : Ref[Tensor(F32)][256]    # learner.actor_train.optimizer.moment1.actors.collect_policy.dense2.bias
+        , %para92 : Ref[Tensor(F32)][40, 256]    # learner.actor_train.optimizer.moment1.actors.collect_policy.dense3.weight
+        , %para93 : Ref[Tensor(F32)][40]    # learner.actor_train.optimizer.moment1.actors.collect_policy.dense3.bias
+        , %para94 : Ref[Tensor(F32)][128, 144]    # learner.actor_train.optimizer.moment2.actors.collect_policy.dense1.weight
+        , %para95 : Ref[Tensor(F32)][128]    # learner.actor_train.optimizer.moment2.actors.collect_policy.dense1.bias
+        , %para96 : Ref[Tensor(F32)][256, 128]    # learner.actor_train.optimizer.moment2.actors.collect_policy.dense2.weight
+        , %para97 : Ref[Tensor(F32)][256]    # learner.actor_train.optimizer.moment2.actors.collect_policy.dense2.bias
+        , %para98 : Ref[Tensor(F32)][40, 256]    # learner.actor_train.optimizer.moment2.actors.collect_policy.dense3.weight
+        , %para99 : Ref[Tensor(F32)][40]    # learner.actor_train.optimizer.moment2.actors.collect_policy.dense3.bias
+        , %para100 : Ref[Tensor(F32)][128, 144]    # learner.actor_train.optimizer.vhat.actors.collect_policy.dense1.weight
+        , %para101 : Ref[Tensor(F32)][128]    # learner.actor_train.optimizer.vhat.actors.collect_policy.dense1.bias
+        , %para102 : Ref[Tensor(F32)][256, 128]    # learner.actor_train.optimizer.vhat.actors.collect_policy.dense2.weight
+        , %para103 : Ref[Tensor(F32)][256]    # learner.actor_train.optimizer.vhat.actors.collect_policy.dense2.bias
+        , %para104 : Ref[Tensor(F32)][40, 256]    # learner.actor_train.optimizer.vhat.actors.collect_policy.dense3.weight
+        , %para105 : Ref[Tensor(F32)][40]    # learner.actor_train.optimizer.vhat.actors.collect_policy.dense3.bias
+        , %para106 : Ref[Tensor(F32)][]    # learner.critic_train.optimizer.learning_rate
+        , %para107 : Ref[Tensor(F32)][]    # learner.actor_train.optimizer.learning_rate
+        , %para108 : Ref[Tensor(I32)][1]    # learner.critic_train.optimizer.global_step
+        , %para109 : Ref[Tensor(I32)][1]    # learner.actor_train.optimizer.global_step
+    ) {
+
+#------------------------> 0
+    %1 = FuncGraph::fg_71()    # fg_71=train_one_episode.71 #scope: Default
+#[CNode]80
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /app/src/td3_trainer.py(79)/        if not self.inited:/#[CNode]81
+}
+# order:
+#   1: train_one_episode_wrapper.56:[CNode]80{[0]: ValueNode<FuncGraph> train_one_episode.71}
+#   2: train_one_episode_wrapper.56:[CNode]81{[0]: ValueNode<Primitive> Return, [1]: [CNode]80}
+
+
+# [No.2] train_one_episode.71
+# In file /app/src/td3_trainer.py(77)/    def train_one_episode(self):/
+funcgraph fg_71[fg_56](
+) {
+    %1 : Tensor(Bool)[] = DoSignaturePrimitive::S-Prim-logical_not{prim_type=1}(%para1)    #(Ref[Tensor(Bool)][]) #scope: Default
+      # In file /app/src/td3_trainer.py(79)/        if not self.inited:/#[CNode]82
+    %2 : Tensor(Bool)[] = FuncGraph::fg_61(%1)    #(Tensor(Bool)[])    # fg_61=bool_.61 #scope: Default
+      # In file /app/src/td3_trainer.py(79)/        if not self.inited:/#[CNode]83
+    %3 : Func = Primitive::Switch{prim_type=1}(%2, FuncGraph::fg_58, FuncGraph::fg_60)    #(Tensor(Bool)[], Func, Func)    # fg_58=✓train_one_episode.58, fg_60=✗train_one_episode.60 #scope: Default
+      # In file /app/src/td3_trainer.py(79)/        if not self.inited:/#[CNode]84
+
+#------------------------> 1
+    %4 = %3() #scope: Default
+      # In file /app/src/td3_trainer.py(79)/        if not self.inited:/#[CNode]85
+    Primitive::Return{prim_type=1}(%4)    #(Undefined) #scope: Default
+      # In file /app/src/td3_trainer.py(79)/        if not self.inited:/#[CNode]86
+}
+# order:
+#   1: train_one_episode.71:[CNode]82{[0]: ValueNode<DoSignaturePrimitive> S-Prim-logical_not, [1]: init_flag}
+#   2: train_one_episode.71:[CNode]83{[0]: ValueNode<FuncGraph> bool_.61, [1]: [CNode]82}
+#   3: train_one_episode.71:[CNode]84{[0]: ValueNode<Primitive> Switch, [1]: [CNode]83, [2]: ValueNode<FuncGraph> ✓train_one_episode.58, [3]: ValueNode<FuncGraph> ✗train_one_episode.60}
+#   4: train_one_episode.71:[CNode]85{[0]: [CNode]84}
+#   5: train_one_episode.71:[CNode]86{[0]: ValueNode<Primitive> Return, [1]: [CNode]85}
+
+
+# [No.3] ✗train_one_episode.60
+# In file /app/src/td3_trainer.py(79)/        if not self.inited:/
+funcgraph fg_60[fg_56](
+) {
+
+#------------------------> 2
+    %1 = FuncGraph::fg_72()    # fg_72=↓train_one_episode.72 #scope: Default
+      # In file /app/src/td3_trainer.py(79)/        if not self.inited:/#[CNode]87
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /app/src/td3_trainer.py(79)/        if not self.inited:/#[CNode]88
+}
+# order:
+#   1: ✗train_one_episode.60:[CNode]87{[0]: ValueNode<FuncGraph> ↓train_one_episode.72}
+#   2: ✗train_one_episode.60:[CNode]88{[0]: ValueNode<Primitive> Return, [1]: [CNode]87}
+
+
+# [No.4] ↓train_one_episode.72
+# In file /app/src/td3_trainer.py(79)/        if not self.inited:/
+funcgraph fg_72[fg_56](
+) {
+    %1 : Tensor(F32)[144] = FuncGraph::fg_89()    # fg_89=reset.89 #scope: Default
+      # In file /app/src/td3_trainer.py(82)/        state = self.msrl.collect_environment.reset()/#state
+
+#------------------------> 3
+    %2 = FuncGraph::fg_73(Tensor(30)[1], %1, Tensor(43)[], Tensor(43)[], Tensor(43)[])    #(Tensor(Bool)[1], Tensor(F32)[144], Tensor(F32)[], Tensor(F32)[], Tensor(F32)[])    # fg_73=⤾↓train_one_episode.73 #scope: Default
+      # In file /app/src/td3_trainer.py(87)/        while not done:/#[CNode]90
+    Primitive::Return{prim_type=1}(%2)    #(Undefined) #scope: Default
+      # In file /app/src/td3_trainer.py(87)/        while not done:/#[CNode]91
+}
+# order:
+#   1: ↓train_one_episode.72:state{[0]: ValueNode<FuncGraph> reset.89}
+#   2: ↓train_one_episode.72:[CNode]90{[0]: ValueNode<FuncGraph> ⤾↓train_one_episode.73, [1]: ValueNode<Tensor> Tensor(shape=[1], dtype=Bool, value=[False]), [2]: state, [3]: ValueNode<Tensor> Tensor(shape=[], dtype=Float32, value=0), [4]: ValueNode<Tensor> Tensor(shape=[], dtype=Float32, value=0), [5]: ValueNode<Tensor> Tensor(shape=[], dtype=Float32, value=0)}
+#   3: ↓train_one_episode.72:[CNode]91{[0]: ValueNode<Primitive> Return, [1]: [CNode]90}
+
+
+# [No.5] ⤾↓train_one_episode.73
+# In file /app/src/td3_trainer.py(87)/        while not done:/
+funcgraph fg_73[fg_56](
+        %para110 : Tensor(Bool)[1]    # Φdone
+        , %para111 : Tensor(F32)[144]    # Φstate
+        , %para112 : Tensor(F32)[]    # Φtotal_reward
+        , %para113 : Tensor(F32)[]    # Φsteps
+        , %para114 : Tensor(F32)[]    # Φloss
+    ) {
+    %1 : Bool = DoSignaturePrimitive::S-Prim-logical_not{prim_type=1}(%para110)    #(Tensor(Bool)[1]) #scope: Default
+      # In file /app/src/td3_trainer.py(87)/        while not done:/#[CNode]92
+    %2 : Bool = FuncGraph::fg_93(%1)    #(Bool)    # fg_93=while_cond.93 #scope: Default
+      # In file /app/src/td3_trainer.py(87)/        while not done:/#[CNode]92
+    %3 : Func = Primitive::Switch{prim_type=1}(%2, FuncGraph::fg_74, FuncGraph::fg_94)    #(Bool, Func, Func)    # fg_74=⥁↓train_one_episode.74, fg_94=↓↓train_one_episode.94 #scope: Default
+      # In file /app/src/td3_trainer.py(87)/        while not done:/#[CNode]95
+
+#------------------------> 4
+    %4 = %3() #scope: Default
+      # In file /app/src/td3_trainer.py(87)/        while not done:/#[CNode]96
+    Primitive::Return{prim_type=1}(%4)    #(Undefined) #scope: Default
+      # In file /app/src/td3_trainer.py(87)/        while not done:/#[CNode]97
+}
+# order:
+#   1: ⤾↓train_one_episode.73:[CNode]92{[0]: ValueNode<DoSignaturePrimitive> S-Prim-logical_not, [1]: Φdone}
+#   2: ⤾↓train_one_episode.73:[CNode]92{[0]: ValueNode<FuncGraph> while_cond.93, [1]: [CNode]92}
+#   3: ⤾↓train_one_episode.73:[CNode]95{[0]: ValueNode<Primitive> Switch, [1]: [CNode]92, [2]: ValueNode<FuncGraph> ⥁↓train_one_episode.74, [3]: ValueNode<FuncGraph> ↓↓train_one_episode.94}
+#   4: ⤾↓train_one_episode.73:[CNode]96{[0]: [CNode]95}
+#   5: ⤾↓train_one_episode.73:[CNode]97{[0]: ValueNode<Primitive> Return, [1]: [CNode]96}
+
+
+# [No.6] ⥁↓train_one_episode.74
+# In file /app/src/td3_trainer.py(87)/        while not done:/
+funcgraph fg_74[fg_73](
+) {
+
+#------------------------> 5
+    %1 = FuncGraph::fg_75(I64(2), %para111)    #(I64, Tensor(F32)[144])    # fg_75=act.75 #scope: Default
+      # In file /app/src/td3_trainer.py(88)/            done, r, new_state, action, my_reward = self.msrl.agent_act(/#[CNode]98
+    %2 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(0))    #(Undefined, Undefined) #scope: Default
+      # In file /app/src/td3_trainer.py(88)/            done, r, new_state, action, my_reward = self.msrl.agent_act(/#done
+    %3 = FuncGraph::fg_61(%2)    #(Undefined)    # fg_61=bool_.61 #scope: Default
+      # In file /app/src/td3_trainer.py(90)/            if done:/#[CNode]99
+    %4 = Primitive::Switch{prim_type=1}(%3, FuncGraph::fg_100, FuncGraph::fg_101)    #(Undefined, Undefined, Undefined)    # fg_100=✓⥁↓train_one_episode.100, fg_101=✗⥁↓train_one_episode.101 #scope: Default
+      # In file /app/src/td3_trainer.py(90)/            if done:/#[CNode]102
+    %5 = %4() #scope: Default
+      # In file /app/src/td3_trainer.py(90)/            if done:/#[CNode]103
+    Primitive::Return{prim_type=1}(%5)    #(Undefined) #scope: Default
+      # In file /app/src/td3_trainer.py(90)/            if done:/#[CNode]104
+}
+# order:
+#   1: ⥁↓train_one_episode.74:[CNode]98{[0]: ValueNode<FuncGraph> act.75, [1]: ValueNode<Int64Imm> 2, [2]: Φstate}
+#   2: ⥁↓train_one_episode.74:done{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]98, [2]: ValueNode<Int64Imm> 0}
+#   3: ⥁↓train_one_episode.74:r{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]98, [2]: ValueNode<Int64Imm> 1}
+#   4: ⥁↓train_one_episode.74:state{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]98, [2]: ValueNode<Int64Imm> 2}
+#   5: ⥁↓train_one_episode.74:action{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]98, [2]: ValueNode<Int64Imm> 3}
+#   6: ⥁↓train_one_episode.74:my_reward{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]98, [2]: ValueNode<Int64Imm> 4}
+#   7: ⥁↓train_one_episode.74:[CNode]99{[0]: ValueNode<FuncGraph> bool_.61, [1]: done}
+#   8: ⥁↓train_one_episode.74:[CNode]102{[0]: ValueNode<Primitive> Switch, [1]: [CNode]99, [2]: ValueNode<FuncGraph> ✓⥁↓train_one_episode.100, [3]: ValueNode<FuncGraph> ✗⥁↓train_one_episode.101}
+#   9: ⥁↓train_one_episode.74:[CNode]103{[0]: [CNode]102}
+#  10: ⥁↓train_one_episode.74:[CNode]104{[0]: ValueNode<Primitive> Return, [1]: [CNode]103}
+
+
+# [No.7] act.75
+# In file /app/src/td3.py(253)/    def act(self, phase, params):/
+funcgraph fg_75[fg_56](
+        %para115 : I64    # phase
+        , %para116 : Tensor(F32)[144]    # params
+    ) {
+    %1 : Bool = DoSignaturePrimitive::S-Prim-equal{prim_type=1}(%para115, I64(1))    #(I64, I64) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(254)/        if phase == 1:/#[CNode]105
+    %2 : Bool = FuncGraph::fg_61(%1)    #(Bool)    # fg_61=bool_.61 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(254)/        if phase == 1:/#[CNode]106
+    %3 : Func = Primitive::Switch{prim_type=1}(%2, FuncGraph::fg_107, FuncGraph::fg_76)    #(Bool, Func, Func)    # fg_107=✓act.107, fg_76=✗act.76 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(254)/        if phase == 1:/#[CNode]108
+
+#------------------------> 6
+    %4 = %3() #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(254)/        if phase == 1:/#[CNode]109
+    Primitive::Return{prim_type=1}(%4)    #(Undefined) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(254)/        if phase == 1:/#[CNode]110
+}
+# order:
+#   1: act.75:[CNode]105{[0]: ValueNode<DoSignaturePrimitive> S-Prim-equal, [1]: phase, [2]: ValueNode<Int64Imm> 1}
+#   2: act.75:[CNode]106{[0]: ValueNode<FuncGraph> bool_.61, [1]: [CNode]105}
+#   3: act.75:[CNode]108{[0]: ValueNode<Primitive> Switch, [1]: [CNode]106, [2]: ValueNode<FuncGraph> ✓act.107, [3]: ValueNode<FuncGraph> ✗act.76}
+#   4: act.75:[CNode]109{[0]: [CNode]108}
+#   5: act.75:[CNode]110{[0]: ValueNode<Primitive> Return, [1]: [CNode]109}
+
+
+# [No.8] ✗act.76
+# In file /app/src/td3.py(254)/        if phase == 1:/
+funcgraph fg_76[fg_75](
+) {
+
+#------------------------> 7
+    %1 = FuncGraph::fg_77()    # fg_77=↓act.77 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(254)/        if phase == 1:/#[CNode]111
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(254)/        if phase == 1:/#[CNode]112
+}
+# order:
+#   1: ✗act.76:[CNode]111{[0]: ValueNode<FuncGraph> ↓act.77}
+#   2: ✗act.76:[CNode]112{[0]: ValueNode<Primitive> Return, [1]: [CNode]111}
+
+
+# [No.9] ↓act.77
+# In file /app/src/td3.py(254)/        if phase == 1:/
+funcgraph fg_77[fg_75](
+) {
+    %1 : Bool = DoSignaturePrimitive::S-Prim-equal{prim_type=1}(%para115, I64(2))    #(I64, I64) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(262)/        if phase == 2:/#[CNode]113
+    %2 : Bool = FuncGraph::fg_61(%1)    #(Bool)    # fg_61=bool_.61 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(262)/        if phase == 2:/#[CNode]114
+    %3 : Func = Primitive::Switch{prim_type=1}(%2, FuncGraph::fg_78, FuncGraph::fg_115)    #(Bool, Func, Func)    # fg_78=✓↓act.78, fg_115=✗↓act.115 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(262)/        if phase == 2:/#[CNode]116
+
+#------------------------> 8
+    %4 = %3() #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(262)/        if phase == 2:/#[CNode]117
+    Primitive::Return{prim_type=1}(%4)    #(Undefined) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(262)/        if phase == 2:/#[CNode]118
+}
+# order:
+#   1: ↓act.77:[CNode]113{[0]: ValueNode<DoSignaturePrimitive> S-Prim-equal, [1]: phase, [2]: ValueNode<Int64Imm> 2}
+#   2: ↓act.77:[CNode]114{[0]: ValueNode<FuncGraph> bool_.61, [1]: [CNode]113}
+#   3: ↓act.77:[CNode]116{[0]: ValueNode<Primitive> Switch, [1]: [CNode]114, [2]: ValueNode<FuncGraph> ✓↓act.78, [3]: ValueNode<FuncGraph> ✗↓act.115}
+#   4: ↓act.77:[CNode]117{[0]: [CNode]116}
+#   5: ↓act.77:[CNode]118{[0]: ValueNode<Primitive> Return, [1]: [CNode]117}
+
+
+# [No.10] ✓↓act.78
+# In file /app/src/td3.py(262)/        if phase == 2:/
+funcgraph fg_78[fg_75](
+) {
+    %1 : Tensor(F32)[1, 144] = DoSignaturePrimitive::S-Prim-ExpandDims{prim_type=1}[output_names=["output"], input_names=["x", "axis"]](%para116, I64(0))    #(Tensor(F32)[144], I64) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(264)/            ts0 = self.expand_dims(params, 0)/#ts0
+    %2 : Tensor(F32)[1, 40] = FuncGraph::fg_119(%1)    #(Tensor(F32)[1, 144])    # fg_119=construct.119 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(265)/            action_probs = self.collect_policy(ts0)/#action_probs
+    %3 : Tensor(F32)[1, 40] = DoSignaturePrimitive::S-Prim-mul{prim_type=1}(Tensor(35)[], %2)    #(Tensor(I64)[], Tensor(F32)[1, 40]) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(266)/            action_probs = self.clip_value_max * action_probs/#action_probs
+    %4 : Tensor(F32)[40] = DoSignaturePrimitive::S-Prim-Squeeze{prim_type=1}[output_names=["output"], input_names=["x"], axis=()](%3)    #(Tensor(F32)[1, 40]) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(267)/            action_probs = self.squeeze(action_probs)/#action_probs
+    %5 : Tensor(F32)[40] = FuncGraph::fg_120(%4)    #(Tensor(F32)[40])    # fg_120=construct.120 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(268)/            action_probs += self.noise(action_probs)/#[CNode]121
+    %6 : Tensor(F32)[40] = DoSignaturePrimitive::S-Prim-add{prim_type=1}(%4, %5)    #(Tensor(F32)[40], Tensor(F32)[40]) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(268)/            action_probs += self.noise(action_probs)/#action_probs
+    %7 : Tensor(F32)[40] = FuncGraph::fg_122(%6, Tensor(35)[], Tensor(35)[])    #(Tensor(F32)[40], Tensor(I64)[], Tensor(I64)[])    # fg_122=clip_by_value.122 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(269)/            action_probs = C.clip_by_value(/#action_probs
+    %8 : Tensor(F32)[1, 40] = DoSignaturePrimitive::S-Prim-ExpandDims{prim_type=1}[output_names=["output"], input_names=["x", "axis"]](%7, I64(0))    #(Tensor(F32)[40], I64) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(272)/            action_probs = self.expand_dims(action_probs, 0)/#action_probs
+    %9 : Tensor(I32)[1] = DoSignaturePrimitive::S-Prim-Argmax{prim_type=1}[output_names=["output"], input_names=["x"], axis=I64(-1), output_type=I32](%8)    #(Tensor(F32)[1, 40]) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(273)/            action = self.argmax(action_probs)/#action
+    %10 : Tuple[I64] = Primitive::getattr{prim_type=1}(%9, "shape")    #(Tensor(I32)[1], String) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]123
+    %11 : I64 = FuncGraph::fg_124(%10)    #(Tuple[I64])    # fg_124=ms_len.124 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]125
+    %12 : Bool = DoSignaturePrimitive::S-Prim-equal{prim_type=1}(%11, I64(2))    #(I64, I64) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]126
+    %13 : Bool = FuncGraph::fg_61(%12)    #(Bool)    # fg_61=bool_.61 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]127
+    %14 : Func = Primitive::Switch{prim_type=1}(%13, FuncGraph::fg_128, FuncGraph::fg_79)    #(Bool, Func, Func)    # fg_128=128.128, fg_79=79.79 #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]129
+
+#------------------------> 9
+    %15 = %14() #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]130
+    Primitive::Return{prim_type=1}(%15)    #(Undefined) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]131
+}
+# order:
+#   1: ✓↓act.78:ts0{[0]: ValueNode<DoSignaturePrimitive> S-Prim-ExpandDims, [1]: params, [2]: ValueNode<Int64Imm> 0}
+#   2: ✓↓act.78:action_probs{[0]: ValueNode<FuncGraph> construct.119, [1]: ts0}
+#   3: ✓↓act.78:action_probs{[0]: ValueNode<DoSignaturePrimitive> S-Prim-mul, [1]: ValueNode<Tensor> Tensor(shape=[], dtype=Int64, value=40), [2]: action_probs}
+#   4: ✓↓act.78:action_probs{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Squeeze, [1]: action_probs}
+#   5: ✓↓act.78:[CNode]121{[0]: ValueNode<FuncGraph> construct.120, [1]: action_probs}
+#   6: ✓↓act.78:action_probs{[0]: ValueNode<DoSignaturePrimitive> S-Prim-add, [1]: action_probs, [2]: [CNode]121}
+#   7: ✓↓act.78:action_probs{[0]: ValueNode<FuncGraph> clip_by_value.122, [1]: action_probs, [2]: ValueNode<Tensor> Tensor(shape=[], dtype=Int64, value=0), [3]: ValueNode<Tensor> Tensor(shape=[], dtype=Int64, value=40)}
+#   8: ✓↓act.78:action_probs{[0]: ValueNode<DoSignaturePrimitive> S-Prim-ExpandDims, [1]: action_probs, [2]: ValueNode<Int64Imm> 0}
+#   9: ✓↓act.78:action{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Argmax, [1]: action_probs}
+#  10: ✓↓act.78:[CNode]123{[0]: ValueNode<Primitive> getattr, [1]: action, [2]: ValueNode<StringImm> shape}
+#  11: ✓↓act.78:[CNode]125{[0]: ValueNode<FuncGraph> ms_len.124, [1]: [CNode]123}
+#  12: ✓↓act.78:[CNode]126{[0]: ValueNode<DoSignaturePrimitive> S-Prim-equal, [1]: [CNode]125, [2]: ValueNode<Int64Imm> 2}
+#  13: ✓↓act.78:[CNode]127{[0]: ValueNode<FuncGraph> bool_.61, [1]: [CNode]126}
+#  14: ✓↓act.78:[CNode]129{[0]: ValueNode<Primitive> Switch, [1]: [CNode]127, [2]: ValueNode<FuncGraph> 128.128, [3]: ValueNode<FuncGraph> 79.79}
+#  15: ✓↓act.78:[CNode]130{[0]: [CNode]129}
+#  16: ✓↓act.78:[CNode]131{[0]: ValueNode<Primitive> Return, [1]: [CNode]130}
+
+
+# [No.11] 79.79
+# In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/
+funcgraph fg_79(
+) {
+
+#------------------------> 10
+    %1 = Primitive::raise{prim_type=1}("AssertionError")    #(String) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]132
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default/msrl-MSRL/actors-TD3Actor
+      # In file /app/src/td3.py(274)/            assert(len(action.shape)==2)/#[CNode]133
+}
+# order:
+#   1: 79.79:[CNode]132{[0]: ValueNode<Primitive> raise, [1]: ValueNode<StringImm> AssertionError}
+#   2: 79.79:[CNode]133{[0]: ValueNode<Primitive> Return, [1]: [CNode]132}
+
+
+#===============================================================================
+# num of function graphs in stack: 11
