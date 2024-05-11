@@ -39,7 +39,7 @@ learner_params = {
     "actor_lr": 1e-3,
     "critic_lr": 1e-4,
     "actor_update_interval": 2,
-    "action_boundary": [-1.0, 1.0],
+    "action_boundary": [0, 1.0],
     "target_update_factor": 0.05,
     "target_update_interval": 5,
     "target_action_noise_stddev": 0.1,

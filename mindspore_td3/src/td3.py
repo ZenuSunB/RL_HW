@@ -113,12 +113,14 @@ class TD3Policy:
             if name is not None:
                 self._update_local_parameters_name(prefix=name)
             self.tanh = P.Tanh()
+            self.soft_max = ops.Softmax()
             self.relu = P.ReLU()
 
         def construct(self, x):
             x = self.relu(self.dense1(x))
             x = self.relu(self.dense2(x))
-            x = self.tanh(self.dense3(x))
+            # x = self.tanh(self.dense3(x))
+            x = self.soft_max(self.dense3(x))
             return x
 
     class TD3CriticNet(nn.Cell):
@@ -363,6 +365,7 @@ class TD3Learner(Learner):
             self.argmax = P.Argmax(output_type=mindspore.int32)
             self.reshape = P.Reshape()
             self.one_hot = ops.OneHot()
+            self.soft_max = ops.OneHot()
             
         def construct(self, obs):
             """calculate the actor loss"""
@@ -370,6 +373,9 @@ class TD3Learner(Learner):
             action_soft_onehot = ops.gumbel_softmax(action_probs, tau=0.01, hard=True, dim=-1) 
             action_batch_vector = action_soft_onehot
             q_values = self.critic_net(obs, action_batch_vector)
+            print(action_probs)
+            print(action_soft_onehot)
+            print(q_values)
             q_values = -q_values
             actor_loss = self.reduce_mean(q_values)
             return actor_loss
