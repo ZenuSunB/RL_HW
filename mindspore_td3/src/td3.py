@@ -32,6 +32,14 @@ from mindspore_rl.policy import GreedyPolicy
 
 seed = 3407
 np.random.seed(seed)
+# def soft_argmax(x, beta=100000.0):
+# 	soft_max = ops.Softmax(x*beta)
+# 	L = x.shape[1]
+# 	indices =  P.ExpandDims(ops.arange(start=0, end=L,dtype = mindspore.float32))
+# 	soft_argmax = soft_max * indices
+# 	indices = soft_argmax.sum(dim=1)  #[bs,c]
+# 	return indices 
+    
 class TD3SoftUpdate(SoftUpdate):
     def __init__(self, factor, update_interval, behavior_params, target_params):
         super().__init__(factor, update_interval, behavior_params, target_params)
@@ -260,10 +268,8 @@ class TD3Actor(Actor):
             new_state, reward, done = self.env.step(action)
             action = self.reshape(action, (1,))
             action = self.cast(action, mindspore.int32)
-            action_probs =  self.one_hot(action, 40,Tensor(1.0, mindspore.float32), Tensor(0.0, mindspore.float32))
-            action_probs =  self.squeeze(action_probs)
             my_reward = reward
-            return done, reward, new_state, action_probs, my_reward
+            return done, reward, new_state, action, my_reward
         if phase == 2:
           # Sample action to act in env
             ts0 = self.expand_dims(params, 0)
@@ -275,11 +281,9 @@ class TD3Actor(Actor):
             )
             action_probs = self.expand_dims(action_probs, 0)
             action = self.argmax(action_probs)
-            new_state, reward, done = self.env.step(
-                self.cast(action, mindspore.int32))
-            action_probs =  self.squeeze(action_probs)
+            new_state, reward, done = self.env.step(action)
             my_reward = reward
-            return done, reward, new_state, action_probs, my_reward
+            return done, reward, new_state, action, my_reward
         if phase == 3:
             # Evaluate the trained policy
             ts0 = self.expand_dims(params, 0)
@@ -333,21 +337,24 @@ class TD3Learner(Learner):
             self.reshape = P.Reshape()
             self.one_hot = ops.OneHot()
             self.cast = P.Cast()
+            self.soft_max = ops.Softmax()
             
-        def construct(self, obs, action_probs, rewards, next_obs, done):
+        def construct(self, obs, action, rewards, next_obs, done):
             """calculate the critic loss"""
             target_action_probs = self.target_actor_net(next_obs)
             noisy_target_action_probs = target_action_probs + self.noises(target_action_probs)
             noisy_target_action_probs = C.clip_by_value(
                 noisy_target_action_probs, self.low, self.high
             )
-            noisy_target_action_soft_onehot =  ops.gumbel_softmax(self.cast(noisy_target_action_probs, mindspore.float32), tau=0.01, hard=True, dim=-1) 
+            noisy_target_action_soft_onehot =  self.soft_max(noisy_target_action_probs*100000.0) 
+            
             target_q1_values = self.target_critic_net_1(next_obs, noisy_target_action_soft_onehot)
             target_q2_values = self.target_critic_net_2(next_obs, noisy_target_action_soft_onehot)
             target_q_values = self.min(target_q1_values, target_q2_values)
             
             td_targets = rewards + self.gamma * (1.0 - done) * target_q_values
-            action_soft_onehot = ops.gumbel_softmax(action_probs, tau=0.01, hard=True, dim=-1) 
+            action_soft_onehot = self.one_hot(action,40,Tensor(1.0, mindspore.float32), Tensor(0.0, mindspore.float32))
+            action_soft_onehot = self.squeeze(action_soft_onehot)
             # predicted values
             pred_q1 = self.critic_net_1(obs, action_soft_onehot)
             pred_q2 = self.critic_net_2(obs, action_soft_onehot)
@@ -365,18 +372,15 @@ class TD3Learner(Learner):
             self.argmax = P.Argmax(output_type=mindspore.int32)
             self.reshape = P.Reshape()
             self.one_hot = ops.OneHot()
-            self.soft_max = ops.OneHot()
+            self.soft_max = ops.Softmax()
             
         def construct(self, obs):
             """calculate the actor loss"""
             action_probs = self.actor_net(obs)
-            action_soft_onehot = ops.gumbel_softmax(action_probs, tau=0.01, hard=True, dim=-1) 
+            action_soft_onehot = self.soft_max(action_probs*100000.0) 
             action_batch_vector = action_soft_onehot
             q_values = self.critic_net(obs, action_batch_vector)
-            print(action_probs)
-            print(action_soft_onehot)
-            print(q_values)
-            q_values = -q_values
+            q_values = - q_values
             actor_loss = self.reduce_mean(q_values)
             return actor_loss
 

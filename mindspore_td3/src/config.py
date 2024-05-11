@@ -92,8 +92,8 @@ algorithm_config = {
     'replay_buffer': {'number': 1,
                       'type': UniformReplayBuffer,
                       'capacity': 20000,
-                      'data_shape': [(144,), (40,), (1,), (144,), (1,)],
-                      'data_type': [ms.float32, ms.float32, ms.float32, ms.float32, ms.bool_],
+                      'data_shape': [(144,), (1,), (1,), (144,), (1,)],
+                      'data_type': [ms.float32, ms.int32, ms.float32, ms.float32, ms.bool_],
                       'sample_size': 32},
 }
 
