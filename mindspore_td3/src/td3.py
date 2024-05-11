@@ -32,13 +32,7 @@ from mindspore_rl.policy import GreedyPolicy
 
 seed = 3407
 np.random.seed(seed)
-# def soft_argmax(x, beta=100000.0):
-# 	soft_max = ops.Softmax(x*beta)
-# 	L = x.shape[1]
-# 	indices =  P.ExpandDims(ops.arange(start=0, end=L,dtype = mindspore.float32))
-# 	soft_argmax = soft_max * indices
-# 	indices = soft_argmax.sum(dim=1)  #[bs,c]
-# 	return indices 
+
     
 class TD3SoftUpdate(SoftUpdate):
     def __init__(self, factor, update_interval, behavior_params, target_params):
@@ -197,7 +191,7 @@ class TD3Policy:
         )
         self.critic_net_1 = self.TD3CriticNet(
             params["state_space_dim"],
-            params["action_space_dim"],
+            1,
             params["hidden_size1"],
             params["hidden_size2"],
             1,
@@ -206,7 +200,7 @@ class TD3Policy:
         )
         self.critic_net_2 = self.TD3CriticNet(
             params["state_space_dim"],
-            params["action_space_dim"],
+            1,
             params["hidden_size1"],
             params["hidden_size2"],
             1,
@@ -215,7 +209,7 @@ class TD3Policy:
         )
         self.target_critic_net_1 = self.TD3CriticNet(
             params["state_space_dim"],
-            params["action_space_dim"],
+            1,
             params["hidden_size1"],
             params["hidden_size2"],
             1,
@@ -224,7 +218,7 @@ class TD3Policy:
         )
         self.target_critic_net_2 = self.TD3CriticNet(
             params["state_space_dim"],
-            params["action_space_dim"],
+            1,
             params["hidden_size1"],
             params["hidden_size2"],
             1,
@@ -274,13 +268,10 @@ class TD3Actor(Actor):
           # Sample action to act in env
             ts0 = self.expand_dims(params, 0)
             action_probs = self.collect_policy(ts0)
-            action_probs = self.squeeze(action_probs)
-            action_probs += self.noise(action_probs)
-            action_probs = C.clip_by_value(
-                action_probs, self.clip_value_min, self.clip_value_max
-            )
-            action_probs = self.expand_dims(action_probs, 0)
             action = self.argmax(action_probs)
+            action += self.noise(action)
+            action = C.clip_by_value(action, self.clip_value_min, self.clip_value_max)
+            action = self.cast(action, mindspore.int32)
             new_state, reward, done = self.env.step(action)
             my_reward = reward
             return done, reward, new_state, action, my_reward
@@ -338,26 +329,27 @@ class TD3Learner(Learner):
             self.one_hot = ops.OneHot()
             self.cast = P.Cast()
             self.soft_max = ops.Softmax()
-            
+            self.expand_dims = P.ExpandDims()
         def construct(self, obs, action, rewards, next_obs, done):
             """calculate the critic loss"""
             target_action_probs = self.target_actor_net(next_obs)
-            noisy_target_action_probs = target_action_probs + self.noises(target_action_probs)
-            noisy_target_action_probs = C.clip_by_value(
-                noisy_target_action_probs, self.low, self.high
+            target_action = self.argmax(target_action_probs)
+            noisy_target_action = target_action + self.noises(target_action)
+            noisy_target_action = C.clip_by_value(
+                noisy_target_action, self.low, self.high
             )
-            noisy_target_action_soft_onehot =  self.soft_max(noisy_target_action_probs*100000.0) 
-            
-            target_q1_values = self.target_critic_net_1(next_obs, noisy_target_action_soft_onehot)
-            target_q2_values = self.target_critic_net_2(next_obs, noisy_target_action_soft_onehot)
+            noisy_target_action = self.cast(noisy_target_action,mindspore.int32)
+            noisy_target_action = self.expand_dims(noisy_target_action, -1)
+        
+            target_q1_values = self.target_critic_net_1(next_obs, noisy_target_action)
+            target_q2_values = self.target_critic_net_2(next_obs, noisy_target_action)
             target_q_values = self.min(target_q1_values, target_q2_values)
             
             td_targets = rewards + self.gamma * (1.0 - done) * target_q_values
-            action = self.squeeze(action)
-            action_soft_onehot = self.one_hot(action,40,Tensor(1.0, mindspore.float32), Tensor(0.0, mindspore.float32))
+
             # predicted values
-            pred_q1 = self.critic_net_1(obs, action_soft_onehot)
-            pred_q2 = self.critic_net_2(obs, action_soft_onehot)
+            pred_q1 = self.critic_net_1(obs, action)
+            pred_q2 = self.critic_net_2(obs, action)
             critic_loss = self._loss(pred_q1, td_targets) + self._loss(pred_q2, td_targets)
             return critic_loss
 
@@ -373,13 +365,17 @@ class TD3Learner(Learner):
             self.reshape = P.Reshape()
             self.one_hot = ops.OneHot()
             self.soft_max = ops.Softmax()
-            
+            self.expand_dims = P.ExpandDims()
+            self.indices = Parameter(initializer(self.expand_dims(ops.arange(0,40),0),[1,40], mindspore.int32), "indices",False,)
+    
         def construct(self, obs):
             """calculate the actor loss"""
             action_probs = self.actor_net(obs)
-            action_soft_onehot = self.soft_max(action_probs*100000.0) 
-            action_batch_vector = action_soft_onehot
-            q_values = self.critic_net(obs, action_batch_vector)
+            action_soft_onehot = self.soft_max(action_probs*1000000.0) 
+
+            action_soft_onehot_M_indices = action_soft_onehot *  self.indices
+            action = action_soft_onehot_M_indices.sum(axis=-1,keepdims=True) 
+            q_values = self.critic_net(obs, action)
             q_values = - q_values
             actor_loss = self.reduce_mean(q_values)
             return actor_loss
