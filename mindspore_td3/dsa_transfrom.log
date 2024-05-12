@@ -5,13 +5,13 @@
 {  }
 
 >>>>>>>>>> constraints <<<<<<<<<<
-domain: "{ S_0[cc0] : 0 <= cc0 <= 282623 }"
+domain: "{ S_0[ax0, ax1] : 0 <= ax0 <= 31 and 0 <= ax1 <= 39 }"
 
 >>>>>>>>>> time_records <<<<<<<<<<
-[ Polyhedral exec time ], InitSchedule spent 1.03602 ms
-[ Polyhedral exec time ], ConstrainSchedule spent 0.870829 ms
-[ Polyhedral exec time ], ComputeSchedule spent 0.060825 ms
-[ Polyhedral exec time ], AnalyzeSchedule spent 0.300198 ms
-[ Polyhedral exec time ], TileOuterBand spent 4.24767 ms
-[ Polyhedral exec time ], CpuMemoryManager spent 0.001173 ms
-[ Polyhedral exec time ], RealizeManager spent 0.009932 ms
+[ Polyhedral exec time ], InitSchedule spent 2.17855 ms
+[ Polyhedral exec time ], ConstrainSchedule spent 1.81375 ms
+[ Polyhedral exec time ], ComputeSchedule spent 0.07716 ms
+[ Polyhedral exec time ], AnalyzeSchedule spent 0.222255 ms
+[ Polyhedral exec time ], TileOuterBand spent 7.2747 ms
+[ Polyhedral exec time ], CpuMemoryManager spent 0.001196 ms
+[ Polyhedral exec time ], RealizeManager spent 0.009696 ms

@@ -37,7 +37,7 @@ policy_params = {
     "decay": 200,
     "state_space_dim": 144,
     "action_space_dim": 40,
-    "hidden_size": 128,
+    "hidden_size": 512,
     "compute_type": mindspore.float32,
 }
 

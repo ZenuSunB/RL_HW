@@ -1,316 +1,42 @@
-At the end, own_hp 0: opp_hp 208. you lose.
-Episode 0: loss is 0.858, rewards is -20.17
-At the end, own_hp 0: opp_hp 224. you lose.
-Episode 1: loss is 0.372, rewards is -14.39
-At the end, own_hp 0: opp_hp 194. you lose.
-Episode 2: loss is 0.433, rewards is -12.97
-At the end, own_hp 0: opp_hp 220. you lose.
-Episode 3: loss is -0.328, rewards is -21.74
-At the end, own_hp 0: opp_hp 279. you lose.
-Episode 4: loss is -0.516, rewards is -27.49
-At the end, own_hp 0: opp_hp 244. you lose.
-Episode 5: loss is -0.794, rewards is -24.17
-At the end, own_hp 0: opp_hp 313. you lose.
-Episode 6: loss is -1.798, rewards is -28.76
-At the end, own_hp 0: opp_hp 269. you lose.
-Episode 7: loss is -2.512, rewards is -23.98
-At the end, own_hp 14: opp_hp 235. you lose.
-Episode 8: loss is -4.168, rewards is -21.04
-At the end, own_hp 0: opp_hp 291. you lose.
-Episode 9: loss is -5.909, rewards is -21.18
-At the end, own_hp 0: opp_hp 240. you lose.
-Episode 10: loss is -7.545, rewards is -22.61
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 10 total rewards is 0.270
------------------------------------------
-At the end, own_hp 0: opp_hp 110. you lose.
-Episode 11: loss is -8.767, rewards is -5.07
-At the end, own_hp 0: opp_hp 264. you lose.
-Episode 12: loss is -9.821, rewards is -26.35
-At the end, own_hp 0: opp_hp 268. you lose.
-Episode 13: loss is -11.737, rewards is -24.91
-At the end, own_hp 0: opp_hp 269. you lose.
-Episode 14: loss is -11.936, rewards is -26.47
-At the end, own_hp 0: opp_hp 182. you lose.
-Episode 15: loss is -13.569, rewards is -17.0
-At the end, own_hp 0: opp_hp 202. you lose.
-Episode 16: loss is -14.939, rewards is -13.8
-At the end, own_hp 0: opp_hp 224. you lose.
-Episode 17: loss is -15.98, rewards is -14.79
-At the end, own_hp 0: opp_hp 152. you lose.
-Episode 18: loss is -17.025, rewards is -14.42
-At the end, own_hp 0: opp_hp 237. you lose.
-Episode 19: loss is -18.117, rewards is -16.91
-At the end, own_hp 0: opp_hp 285. you lose.
-Episode 20: loss is -19.682, rewards is -28.78
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 20 total rewards is 0.020
------------------------------------------
+At the end, own_hp 0: opp_hp 287. you lose.
+Episode 0: loss is 0.749, rewards is -21.51
 At the end, own_hp 0: opp_hp 265. you lose.
-Episode 21: loss is -20.682, rewards is -22.17
-At the end, own_hp 0: opp_hp 312. you lose.
-Episode 22: loss is -20.814, rewards is -30.91
-At the end, own_hp 0: opp_hp 212. you lose.
-Episode 23: loss is -22.267, rewards is -20.68
-At the end, own_hp 0: opp_hp 335. you lose.
-Episode 24: loss is -23.045, rewards is -31.35
-At the end, own_hp 0: opp_hp 260. you lose.
-Episode 25: loss is -24.076, rewards is -16.25
-At the end, own_hp 0: opp_hp 268. you lose.
-Episode 26: loss is -24.642, rewards is -29.16
-At the end, own_hp 0: opp_hp 335. you lose.
-Episode 27: loss is -25.867, rewards is -32.54
-At the end, own_hp 0: opp_hp 176. you lose.
-Episode 28: loss is -26.889, rewards is -16.87
-At the end, own_hp 0: opp_hp 282. you lose.
-Episode 29: loss is -27.372, rewards is -24.48
-At the end, own_hp 0: opp_hp 249. you lose.
-Episode 30: loss is -27.717, rewards is -24.03
-At the end, own_hp 0: opp_hp 255. you lose.
------------------------------------------
-Evaluate for episode 30 total rewards is -14.510
------------------------------------------
-At the end, own_hp 0: opp_hp 340. you lose.
-Episode 31: loss is -29.258, rewards is -32.22
-At the end, own_hp 0: opp_hp 174. you lose.
-Episode 32: loss is -30.128, rewards is -13.58
-At the end, own_hp 0: opp_hp 214. you lose.
-Episode 33: loss is -31.645, rewards is -22.18
-At the end, own_hp 0: opp_hp 170. you lose.
-Episode 34: loss is -32.243, rewards is -5.86
-At the end, own_hp 0: opp_hp 274. you lose.
-Episode 35: loss is -32.599, rewards is -26.47
-At the end, own_hp 0: opp_hp 296. you lose.
-Episode 36: loss is -33.877, rewards is -27.97
-At the end, own_hp 0: opp_hp 279. you lose.
-Episode 37: loss is -34.46, rewards is -26.01
-At the end, own_hp 0: opp_hp 309. you lose.
-Episode 38: loss is -35.33, rewards is -28.39
-At the end, own_hp 0: opp_hp 209. you lose.
-Episode 39: loss is -36.97, rewards is -11.36
-At the end, own_hp 0: opp_hp 310. you lose.
-Episode 40: loss is -37.057, rewards is -30.71
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 40 total rewards is 0.130
------------------------------------------
-At the end, own_hp 0: opp_hp 243. you lose.
-Episode 41: loss is -37.852, rewards is -24.04
-At the end, own_hp 0: opp_hp 214. you lose.
-Episode 42: loss is -39.278, rewards is -17.32
-At the end, own_hp 0: opp_hp 214. you lose.
-Episode 43: loss is -39.753, rewards is -21.27
-At the end, own_hp 0: opp_hp 344. you lose.
-Episode 44: loss is -40.512, rewards is -23.88
-At the end, own_hp 0: opp_hp 213. you lose.
-Episode 45: loss is -41.033, rewards is -20.9
-At the end, own_hp 0: opp_hp 92. you lose.
-Episode 46: loss is -42.347, rewards is -8.41
-At the end, own_hp 0: opp_hp 196. you lose.
-Episode 47: loss is -44.624, rewards is -9.27
-At the end, own_hp 26: opp_hp 175. you lose.
-Episode 48: loss is -45.982, rewards is -15.17
-At the end, own_hp 0: opp_hp 288. you lose.
-Episode 49: loss is -47.207, rewards is -26.58
-At the end, own_hp 0: opp_hp 259. you lose.
-Episode 50: loss is -47.508, rewards is -14.73
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 50 total rewards is 0.080
------------------------------------------
-At the end, own_hp 0: opp_hp 159. you lose.
-Episode 51: loss is -49.96, rewards is -15.67
-At the end, own_hp 38: opp_hp 114. you lose.
-Episode 52: loss is -50.502, rewards is -7.65
-At the end, own_hp 13: opp_hp 155. you lose.
-Episode 53: loss is -51.768, rewards is -14.25
-At the end, own_hp 0: opp_hp 252. you lose.
-Episode 54: loss is -52.435, rewards is -25.19
-At the end, own_hp 0: opp_hp 232. you lose.
-Episode 55: loss is -52.924, rewards is -19.77
-At the end, own_hp 53: opp_hp 223. you lose.
-Episode 56: loss is -54.315, rewards is -16.95
-At the end, own_hp 0: opp_hp 264. you lose.
-Episode 57: loss is -55.233, rewards is -24.44
-At the end, own_hp 0: opp_hp 201. you lose.
-Episode 58: loss is -55.97, rewards is -9.26
-At the end, own_hp 0: opp_hp 138. you lose.
-Episode 59: loss is -57.519, rewards is -3.41
-At the end, own_hp 0: opp_hp 243. you lose.
-Episode 60: loss is -57.785, rewards is -21.33
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 60 total rewards is 0.030
------------------------------------------
-At the end, own_hp 0: opp_hp 186. you lose.
-Episode 61: loss is -58.925, rewards is -12.46
-At the end, own_hp 0: opp_hp 219. you lose.
-Episode 62: loss is -59.166, rewards is -22.46
-At the end, own_hp 0: opp_hp 199. you lose.
-Episode 63: loss is -59.479, rewards is -19.4
-At the end, own_hp 0: opp_hp 180. you lose.
-Episode 64: loss is -60.89, rewards is -15.88
-At the end, own_hp 0: opp_hp 192. you lose.
-Episode 65: loss is -62.468, rewards is -17.38
-At the end, own_hp 0: opp_hp 154. you lose.
-Episode 66: loss is -61.646, rewards is -15.04
-At the end, own_hp 0: opp_hp 269. you lose.
-Episode 67: loss is -62.117, rewards is -22.01
-At the end, own_hp 0: opp_hp 238. you lose.
-Episode 68: loss is -63.009, rewards is -23.51
-At the end, own_hp 24: opp_hp 229. you lose.
-Episode 69: loss is -64.871, rewards is -20.51
-At the end, own_hp 0: opp_hp 304. you lose.
-Episode 70: loss is -66.381, rewards is -29.89
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 70 total rewards is 0.160
------------------------------------------
-At the end, own_hp 0: opp_hp 325. you lose.
-Episode 71: loss is -67.279, rewards is -31.85
-At the end, own_hp 0: opp_hp 168. you lose.
-Episode 72: loss is -68.105, rewards is -15.86
-At the end, own_hp 0: opp_hp 233. you lose.
-Episode 73: loss is -69.118, rewards is -14.3
-At the end, own_hp 0: opp_hp 270. you lose.
-Episode 74: loss is -69.867, rewards is -27.09
-At the end, own_hp 0: opp_hp 119. you lose.
-Episode 75: loss is -70.876, rewards is -11.15
-At the end, own_hp 31: opp_hp 103. you lose.
-Episode 76: loss is -71.496, rewards is -6.61
+Episode 1: loss is 0.931, rewards is -24.2
+At the end, own_hp 0: opp_hp 182. you lose.
+Episode 2: loss is 1.273, rewards is -17.33
+At the end, own_hp 0: opp_hp 328. you lose.
+Episode 3: loss is 0.648, rewards is -32.39
+At the end, own_hp 0: opp_hp 350. you lose.
+Episode 4: loss is 0.506, rewards is -32.94
+At the end, own_hp 0: opp_hp 370. you lose.
+Episode 5: loss is 0.609, rewards is -35.83
+At the end, own_hp 0: opp_hp 380. you lose.
+Episode 6: loss is 0.581, rewards is -28.16
 At the end, own_hp 0: opp_hp 322. you lose.
-Episode 77: loss is -71.494, rewards is -30.59
-At the end, own_hp 0: opp_hp 78. you lose.
-Episode 78: loss is -74.018, rewards is 0.92
-At the end, own_hp 0: opp_hp 185. you lose.
-Episode 79: loss is -74.755, rewards is -14.05
-At the end, own_hp 0: opp_hp 122. you lose.
-Episode 80: loss is -74.918, rewards is -8.18
-can't receive signals within 60 seconds. let's terminate gym env.
+Episode 7: loss is 1.041, rewards is -20.5
+At the end, own_hp 0: opp_hp 340. you lose.
+Episode 8: loss is 1.394, rewards is -31.75
+At the end, own_hp 0: opp_hp 380. you lose.
+Episode 9: loss is 1.189, rewards is -35.46
+At the end, own_hp 0: opp_hp 390. you lose.
+Episode 10: loss is 1.936, rewards is -26.93
+At the end, own_hp 0: opp_hp 340. you lose.
 -----------------------------------------
-Evaluate for episode 80 total rewards is 0.170
+Evaluate for episode 10 total rewards is -33.560
 -----------------------------------------
-At the end, own_hp 0: opp_hp 203. you lose.
-Episode 81: loss is -76.081, rewards is -16.18
-At the end, own_hp 0: opp_hp 142. you lose.
-Episode 82: loss is -76.326, rewards is -14.25
-At the end, own_hp 0: opp_hp 327. you lose.
-Episode 83: loss is -78.504, rewards is -32.4
-At the end, own_hp 0: opp_hp 212. you lose.
-Episode 84: loss is -78.764, rewards is -16.01
-At the end, own_hp 0: opp_hp 241. you lose.
-Episode 85: loss is -78.667, rewards is -18.72
-At the end, own_hp 0: opp_hp 126. you lose.
-Episode 86: loss is -79.411, rewards is -6.07
-At the end, own_hp 0: opp_hp 226. you lose.
-Episode 87: loss is -79.606, rewards is -22.68
-At the end, own_hp 0: opp_hp 180. you lose.
-Episode 88: loss is -81.894, rewards is -12.34
-At the end, own_hp 0: opp_hp 135. you lose.
-Episode 89: loss is -81.912, rewards is -12.16
-At the end, own_hp 0: opp_hp 104. you lose.
-Episode 90: loss is -82.123, rewards is 1.48
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 90 total rewards is 0.140
------------------------------------------
-At the end, own_hp 0: opp_hp 240. you lose.
-Episode 91: loss is -83.172, rewards is -23.24
-At the end, own_hp 0: opp_hp 200. you lose.
-Episode 92: loss is -82.8, rewards is -12.21
-At the end, own_hp 51: opp_hp 178. you lose.
-Episode 93: loss is -84.539, rewards is -12.93
-At the end, own_hp 0: opp_hp 162. you lose.
-Episode 94: loss is -86.031, rewards is -10.48
-At the end, own_hp 0: opp_hp 267. you lose.
-Episode 95: loss is -86.081, rewards is -25.25
-At the end, own_hp 0: opp_hp 99. you lose.
-Episode 96: loss is -87.394, rewards is -9.43
-At the end, own_hp 0: opp_hp 315. you lose.
-Episode 97: loss is -86.97, rewards is -29.43
-At the end, own_hp 0: opp_hp 278. you lose.
-Episode 98: loss is -88.304, rewards is -27.15
-At the end, own_hp 0: opp_hp 181. you lose.
-Episode 99: loss is -88.356, rewards is -18.47
-At the end, own_hp 0: opp_hp 185. you lose.
-Episode 100: loss is -90.814, rewards is -18.38
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 100 total rewards is 0.200
------------------------------------------
-At the end, own_hp 0: opp_hp 330. you lose.
-Episode 101: loss is -89.078, rewards is -26.07
-At the end, own_hp 0: opp_hp 182. you lose.
-Episode 102: loss is -91.036, rewards is -15.72
-At the end, own_hp 0: opp_hp 227. you lose.
-Episode 103: loss is -92.227, rewards is -17.1
-At the end, own_hp 0: opp_hp 97. you lose.
-Episode 104: loss is -92.714, rewards is -8.77
-At the end, own_hp 0: opp_hp 228. you lose.
-Episode 105: loss is -94.484, rewards is -15.6
-At the end, own_hp 0: opp_hp 175. you lose.
-Episode 106: loss is -92.786, rewards is -14.27
-At the end, own_hp 0: opp_hp 227. you lose.
-Episode 107: loss is -93.623, rewards is -18.66
-At the end, own_hp 0: opp_hp 240. you lose.
-Episode 108: loss is -94.604, rewards is -22.28
-At the end, own_hp 0: opp_hp 311. you lose.
-Episode 109: loss is -95.026, rewards is -29.05
-At the end, own_hp 0: opp_hp 152. you lose.
-Episode 110: loss is -96.566, rewards is -17.42
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 110 total rewards is 0.170
------------------------------------------
-At the end, own_hp 0: opp_hp 290. you lose.
-Episode 111: loss is -96.6, rewards is -28.54
-At the end, own_hp 0: opp_hp 198. you lose.
-Episode 112: loss is -96.926, rewards is -18.56
-At the end, own_hp 0: opp_hp 245. you lose.
-Episode 113: loss is -100.952, rewards is -14.12
-At the end, own_hp 65: opp_hp 196. you lose.
-Episode 114: loss is -100.814, rewards is -11.34
-At the end, own_hp 0: opp_hp 182. you lose.
-Episode 115: loss is -101.194, rewards is -16.99
-At the end, own_hp 0: opp_hp 148. you lose.
-Episode 116: loss is -101.891, rewards is -14.8
-At the end, own_hp 0: opp_hp 214. you lose.
-Episode 117: loss is -102.879, rewards is -10.33
-At the end, own_hp 0: opp_hp 245. you lose.
-Episode 118: loss is -104.801, rewards is -23.57
-At the end, own_hp 0: opp_hp 286. you lose.
-Episode 119: loss is -104.244, rewards is -23.74
-At the end, own_hp 0: opp_hp 206. you lose.
-Episode 120: loss is -105.52, rewards is -20.61
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 120 total rewards is 0.090
------------------------------------------
-At the end, own_hp 0: opp_hp 240. you lose.
-Episode 121: loss is -105.865, rewards is -24.12
-At the end, own_hp 0: opp_hp 180. you lose.
-Episode 122: loss is -105.685, rewards is -9.02
-At the end, own_hp 0: opp_hp 335. you lose.
-Episode 123: loss is -104.326, rewards is -31.11
-At the end, own_hp 0: opp_hp 255. you lose.
-Episode 124: loss is -107.484, rewards is -25.33
-At the end, own_hp 0: opp_hp 233. you lose.
-Episode 125: loss is -105.442, rewards is -22.8
-At the end, own_hp 0: opp_hp 222. you lose.
-Episode 126: loss is -107.285, rewards is -21.32
-At the end, own_hp 0: opp_hp 207. you lose.
-Episode 127: loss is -109.049, rewards is -18.31
-At the end, own_hp 0: opp_hp 273. you lose.
-Episode 128: loss is -109.258, rewards is -27.02
-At the end, own_hp 0: opp_hp 272. you lose.
-Episode 129: loss is -110.333, rewards is -26.6
-At the end, own_hp 0: opp_hp 202. you lose.
-Episode 130: loss is -108.407, rewards is -8.79
-can't receive signals within 60 seconds. let's terminate gym env.
------------------------------------------
-Evaluate for episode 130 total rewards is -4.580
------------------------------------------
-At the end, own_hp 0: opp_hp 249. you lose.
-Episode 131: loss is -113.436, rewards is -24.47
+At the end, own_hp 0: opp_hp 352. you lose.
+Episode 11: loss is 1.788, rewards is -34.17
+At the end, own_hp 0: opp_hp 292. you lose.
+Episode 12: loss is 2.103, rewards is -28.61
+At the end, own_hp 0: opp_hp 340. you lose.
+Episode 13: loss is 2.129, rewards is -31.16
+At the end, own_hp 0: opp_hp 376. you lose.
+Episode 14: loss is 1.914, rewards is -36.09
+At the end, own_hp 0: opp_hp 296. you lose.
+Episode 15: loss is 2.082, rewards is -24.07
+At the end, own_hp 0: opp_hp 308. you lose.
+Episode 16: loss is 1.928, rewards is -29.48
+At the end, own_hp 0: opp_hp 356. you lose.
+Episode 17: loss is 2.176, rewards is -32.92
+At the end, own_hp 0: opp_hp 340. you lose.
+Episode 18: loss is 2.231, rewards is -32.37

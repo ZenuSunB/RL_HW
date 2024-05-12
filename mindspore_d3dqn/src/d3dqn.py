@@ -65,11 +65,9 @@ class D3DQNPolicy():
             self.feature_layer_linear = nn.Dense(
                 input_size, hidden_size, weight_init=weight_init
             ).to_float(compute_type)
-    
             self.value_layer_linear = nn.Dense(
                 hidden_size, 1, weight_init=weight_init
             ).to_float(compute_type)
-            
             self.advantage_layer_linear = nn.Dense(
                 hidden_size, output_size, weight_init=weight_init
             ).to_float(compute_type)
