@@ -1,0 +1,6 @@
+At the end, own_hp 0: opp_hp 330. you lose.
+Episode 0: loss is 4.432, rewards is -32.51
+At the end, own_hp 0: opp_hp 82. you lose.
+Episode 1: loss is 0.144, rewards is -6.27
+can't receive signals within 60 seconds. let's terminate gym env.
+Episode 2: loss is 0.215, rewards is 0.63
