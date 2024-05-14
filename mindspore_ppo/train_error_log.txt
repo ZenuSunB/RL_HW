@@ -1,0 +1,47 @@
+[WARNING] UTILS(8,7f73f4ff5700,python):2024-05-10-08:05:50.219.326 [mindspore/ccsrc/utils/comm_manager.cc:78] GetInstance] CommManager instance for CPU not found, return default instance.
+[ERROR] ANALYZER(8,7f73f4ff5700,python):2024-05-10-08:05:50.223.577 [mindspore/ccsrc/pipeline/jit/static_analysis/async_eval_result.cc:66] HandleException] Exception happened, check the information as below.
+
+The function call stack (See file '/app/rank_0/om/analyze_fail.dat' for more details. Get instructions about `analyze_fail.dat` at https://www.mindspore.cn/search?inputValue=analyze_fail.dat):
+# 0 In file /app/src/ppo_trainer.py(62)
+        while self.less(j, self.duration):
+        ^
+# 1 In file /app/src/ppo_trainer.py(63)
+            action, miu, sigma = self.msrl.actors.get_action(state)
+                                 ^
+# 2 In file /app/src/ppo.py(212)
+        action, miu, sigma = self.collect_policy(params)
+                             ^
+# 3 In file /app/src/ppo.py(141)
+            miu, sigma = self.actor_net(params)
+                         ^
+# 4 In file /app/src/ppo.py(79)
+            x = self.tanh_actor(self.linear1_actor(x))
+                                ^
+# 5 In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(459)
+        check_dense_input_shape(x_shape, self.cls_name)
+        ^
+
+Traceback (most recent call last):
+  File "train.py", line 49, in <module>
+    train()
+  File "train.py", line 45, in train
+    ac_session.run(class_type=PPOTrainer, episode=episode, params=config.trainer_params, callbacks=cbs)
+  File "/usr/local/lib/python3.8/dist-packages/mindspore_rl/core/session.py", line 91, in run
+    trainer.train(episode, callbacks, ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/mindspore_rl/agent/trainer.py", line 90, in train
+    ans = self.train_one_episode()
+  File "/usr/local/lib/python3.8/dist-packages/mindspore/common/api.py", line 532, in staging_specialize
+    out = _MindsporeFunctionExecutor(func, hash_obj, input_signature, process_obj, jit_config)(*args)
+  File "/usr/local/lib/python3.8/dist-packages/mindspore/common/api.py", line 95, in wrapper
+    results = fn(*arg, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/mindspore/common/api.py", line 338, in __call__
+    phase = self.compile(args_list, self.fn.__name__)
+  File "/usr/local/lib/python3.8/dist-packages/mindspore/common/api.py", line 304, in compile
+    is_compile = self._graph_executor.compile(self.obj, compile_args, phase, True)
+  File "/usr/local/lib/python3.8/dist-packages/mindspore/ops/primitive.py", line 564, in __infer__
+    out[track] = fn(*(x[track] for x in args))
+  File "/usr/local/lib/python3.8/dist-packages/mindspore/ops/primitive.py", line 731, in infer_value
+    return fn(*args)
+  File "/usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py", line 325, in check_dense_input_shape
+    raise ValueError(f"{msg_prefix} dimension of 'x' should not be less than 2, but got {len(x)}.")
+ValueError: For 'Dense', the dimension of 'x' should not be less than 2, but got 1.

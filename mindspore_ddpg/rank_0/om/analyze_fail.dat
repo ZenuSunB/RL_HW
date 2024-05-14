@@ -1,0 +1,409 @@
+# 1.This file shows the parsed IR info when graph evaluating failed to help find the problem.
+# 2.You can search the last `------------------------>` to the node which is inferred failed.
+# 3.Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.dat to get more instructions.
+# ===============================================================================
+
+# [No.1] train_one_episode_wrapper.1
+# In file /app/src/ppo_trainer.py(55)/    def train_one_episode(self):/
+funcgraph fg_1(
+        %para1 : Ref[Tensor(I32)][]    # actors._buffer.count
+        , %para2 : Ref[Tensor(F32)][20000, 144]    # actors._buffer.buffer_0
+        , %para3 : Ref[Tensor(I32)][20000, 1]    # actors._buffer.buffer_1
+        , %para4 : Ref[Tensor(F32)][20000, 1]    # actors._buffer.buffer_2
+        , %para5 : Ref[Tensor(F32)][20000, 144]    # actors._buffer.buffer_3
+        , %para6 : Ref[Tensor(I32)][]    # actors._buffer.head
+        , %para7 : Ref[Tensor(F32)][200, 144]    # learner.critic_net.linear1_critic.weight
+        , %para8 : Ref[Tensor(F32)][200]    # learner.critic_net.linear1_critic.bias
+        , %para9 : Ref[Tensor(F32)][100, 200]    # learner.critic_net.linear2_critic.weight
+        , %para10 : Ref[Tensor(F32)][100]    # learner.critic_net.linear2_critic.bias
+        , %para11 : Ref[Tensor(F32)][1, 100]    # learner.critic_net.linear3_critic.weight
+        , %para12 : Ref[Tensor(F32)][1]    # learner.critic_net.linear3_critic.bias
+        , %para13 : Ref[Tensor(F32)][40]    # learner.actor_net.bias_sigma_actor
+        , %para14 : Ref[Tensor(F32)][200, 144]    # learner.actor_net.linear1_actor.weight
+        , %para15 : Ref[Tensor(F32)][200]    # learner.actor_net.linear1_actor.bias
+        , %para16 : Ref[Tensor(F32)][100, 200]    # learner.actor_net.linear2_actor.weight
+        , %para17 : Ref[Tensor(F32)][100]    # learner.actor_net.linear2_actor.bias
+        , %para18 : Ref[Tensor(F32)][40, 100]    # learner.actor_net.linear_miu_actor.weight
+        , %para19 : Ref[Tensor(F32)][40]    # learner.actor_net.linear_miu_actor.bias
+        , %para20 : Ref[Tensor(F32)][1]    # learner._ppo_net_train.optimizer.beta1_power
+        , %para21 : Ref[Tensor(F32)][1]    # learner._ppo_net_train.optimizer.beta2_power
+        , %para22 : Ref[Tensor(F32)][200, 144]    # learner._ppo_net_train.optimizer.moment1.linear1_critic.weight
+        , %para23 : Ref[Tensor(F32)][200]    # learner._ppo_net_train.optimizer.moment1.linear1_critic.bias
+        , %para24 : Ref[Tensor(F32)][100, 200]    # learner._ppo_net_train.optimizer.moment1.linear2_critic.weight
+        , %para25 : Ref[Tensor(F32)][100]    # learner._ppo_net_train.optimizer.moment1.linear2_critic.bias
+        , %para26 : Ref[Tensor(F32)][1, 100]    # learner._ppo_net_train.optimizer.moment1.linear3_critic.weight
+        , %para27 : Ref[Tensor(F32)][1]    # learner._ppo_net_train.optimizer.moment1.linear3_critic.bias
+        , %para28 : Ref[Tensor(F32)][40]    # learner._ppo_net_train.optimizer.moment1.actors.collect_policy.actor_net.bias_sigma_actor
+        , %para29 : Ref[Tensor(F32)][200, 144]    # learner._ppo_net_train.optimizer.moment1.actors.collect_policy.actor_net.linear1_actor.weight
+        , %para30 : Ref[Tensor(F32)][200]    # learner._ppo_net_train.optimizer.moment1.actors.collect_policy.actor_net.linear1_actor.bias
+        , %para31 : Ref[Tensor(F32)][100, 200]    # learner._ppo_net_train.optimizer.moment1.actors.collect_policy.actor_net.linear2_actor.weight
+        , %para32 : Ref[Tensor(F32)][100]    # learner._ppo_net_train.optimizer.moment1.actors.collect_policy.actor_net.linear2_actor.bias
+        , %para33 : Ref[Tensor(F32)][40, 100]    # learner._ppo_net_train.optimizer.moment1.actors.collect_policy.actor_net.linear_miu_actor.weight
+        , %para34 : Ref[Tensor(F32)][40]    # learner._ppo_net_train.optimizer.moment1.actors.collect_policy.actor_net.linear_miu_actor.bias
+        , %para35 : Ref[Tensor(F32)][200, 144]    # learner._ppo_net_train.optimizer.moment2.linear1_critic.weight
+        , %para36 : Ref[Tensor(F32)][200]    # learner._ppo_net_train.optimizer.moment2.linear1_critic.bias
+        , %para37 : Ref[Tensor(F32)][100, 200]    # learner._ppo_net_train.optimizer.moment2.linear2_critic.weight
+        , %para38 : Ref[Tensor(F32)][100]    # learner._ppo_net_train.optimizer.moment2.linear2_critic.bias
+        , %para39 : Ref[Tensor(F32)][1, 100]    # learner._ppo_net_train.optimizer.moment2.linear3_critic.weight
+        , %para40 : Ref[Tensor(F32)][1]    # learner._ppo_net_train.optimizer.moment2.linear3_critic.bias
+        , %para41 : Ref[Tensor(F32)][40]    # learner._ppo_net_train.optimizer.moment2.actors.collect_policy.actor_net.bias_sigma_actor
+        , %para42 : Ref[Tensor(F32)][200, 144]    # learner._ppo_net_train.optimizer.moment2.actors.collect_policy.actor_net.linear1_actor.weight
+        , %para43 : Ref[Tensor(F32)][200]    # learner._ppo_net_train.optimizer.moment2.actors.collect_policy.actor_net.linear1_actor.bias
+        , %para44 : Ref[Tensor(F32)][100, 200]    # learner._ppo_net_train.optimizer.moment2.actors.collect_policy.actor_net.linear2_actor.weight
+        , %para45 : Ref[Tensor(F32)][100]    # learner._ppo_net_train.optimizer.moment2.actors.collect_policy.actor_net.linear2_actor.bias
+        , %para46 : Ref[Tensor(F32)][40, 100]    # learner._ppo_net_train.optimizer.moment2.actors.collect_policy.actor_net.linear_miu_actor.weight
+        , %para47 : Ref[Tensor(F32)][40]    # learner._ppo_net_train.optimizer.moment2.actors.collect_policy.actor_net.linear_miu_actor.bias
+        , %para48 : Ref[Tensor(F32)][200, 144]    # learner._ppo_net_train.optimizer.vhat.linear1_critic.weight
+        , %para49 : Ref[Tensor(F32)][200]    # learner._ppo_net_train.optimizer.vhat.linear1_critic.bias
+        , %para50 : Ref[Tensor(F32)][100, 200]    # learner._ppo_net_train.optimizer.vhat.linear2_critic.weight
+        , %para51 : Ref[Tensor(F32)][100]    # learner._ppo_net_train.optimizer.vhat.linear2_critic.bias
+        , %para52 : Ref[Tensor(F32)][1, 100]    # learner._ppo_net_train.optimizer.vhat.linear3_critic.weight
+        , %para53 : Ref[Tensor(F32)][1]    # learner._ppo_net_train.optimizer.vhat.linear3_critic.bias
+        , %para54 : Ref[Tensor(F32)][40]    # learner._ppo_net_train.optimizer.vhat.actors.collect_policy.actor_net.bias_sigma_actor
+        , %para55 : Ref[Tensor(F32)][200, 144]    # learner._ppo_net_train.optimizer.vhat.actors.collect_policy.actor_net.linear1_actor.weight
+        , %para56 : Ref[Tensor(F32)][200]    # learner._ppo_net_train.optimizer.vhat.actors.collect_policy.actor_net.linear1_actor.bias
+        , %para57 : Ref[Tensor(F32)][100, 200]    # learner._ppo_net_train.optimizer.vhat.actors.collect_policy.actor_net.linear2_actor.weight
+        , %para58 : Ref[Tensor(F32)][100]    # learner._ppo_net_train.optimizer.vhat.actors.collect_policy.actor_net.linear2_actor.bias
+        , %para59 : Ref[Tensor(F32)][40, 100]    # learner._ppo_net_train.optimizer.vhat.actors.collect_policy.actor_net.linear_miu_actor.weight
+        , %para60 : Ref[Tensor(F32)][40]    # learner._ppo_net_train.optimizer.vhat.actors.collect_policy.actor_net.linear_miu_actor.bias
+        , %para61 : Ref[Tensor(F32)][]    # learner._ppo_net_train.optimizer.learning_rate
+        , %para62 : Ref[Tensor(I32)][1]    # learner._ppo_net_train.optimizer.global_step
+    ) {
+
+#------------------------> 0
+    %1 = FuncGraph::fg_4()    # fg_4=train_one_episode.4 #scope: Default
+#[CNode]11
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]12
+}
+# order:
+#   1: train_one_episode_wrapper.1:[CNode]11{[0]: ValueNode<FuncGraph> train_one_episode.4}
+#   2: train_one_episode_wrapper.1:[CNode]12{[0]: ValueNode<Primitive> Return, [1]: [CNode]11}
+
+
+# [No.2] train_one_episode.4
+# In file /app/src/ppo_trainer.py(55)/    def train_one_episode(self):/
+funcgraph fg_4[fg_1](
+) {
+    %1 : Tensor(I32)[] = FuncGraph::fg_13()    # fg_13=reset.13 #scope: Default
+      # In file /app/src/ppo_trainer.py(61)/        self.msrl.replay_buffer_reset()/#[CNode]14
+    %2 : Tensor(I32)[] = Primitive::stop_gradient{prim_type=1}(%1)    #(Tensor(I32)[]) #scope: Default
+#[CNode]15
+    %3 : Tensor(F32)[144] = FuncGraph::fg_16()    # fg_16=reset.16 #scope: Default
+      # In file /app/src/ppo_trainer.py(60)/        state = self.msrl.collect_environment.reset()/#state
+
+#------------------------> 1
+    %4 = FuncGraph::fg_5(Tensor(43)[], %3, Tensor(43)[])    #(Tensor(F32)[], Tensor(F32)[144], Tensor(F32)[])    # fg_5=⤾train_one_episode.5 #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]17
+    %5 = Primitive::Depend{prim_type=1}[side_effect_propagate=I64(1)](%4, %2)    #(Undefined, Tensor(I32)[]) #scope: Default
+#[CNode]18
+    Primitive::Return{prim_type=1}(%5)    #(Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]19
+}
+# order:
+#   1: train_one_episode.4:state{[0]: ValueNode<FuncGraph> reset.16}
+#   2: train_one_episode.4:[CNode]14{[0]: ValueNode<FuncGraph> reset.13}
+#   3: train_one_episode.4:[CNode]17{[0]: ValueNode<FuncGraph> ⤾train_one_episode.5, [1]: ValueNode<Tensor> Tensor(shape=[], dtype=Float32, value=0), [2]: state, [3]: ValueNode<Tensor> Tensor(shape=[], dtype=Float32, value=0)}
+#   4: train_one_episode.4:[CNode]19{[0]: ValueNode<Primitive> Return, [1]: [CNode]18}
+
+
+# [No.3] ⤾train_one_episode.5
+# In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/
+funcgraph fg_5[fg_1](
+        %para63 : Tensor(F32)[]    # Φj
+        , %para64 : Tensor(F32)[144]    # Φstate
+        , %para65 : Tensor(F32)[]    # Φtraining_reward
+    ) {
+    %1 : Tensor(Bool)[] = DoSignaturePrimitive::S-Prim-Less{prim_type=1}[output_names=["output"], input_names=["x", "y"]](%para63, I64(1000))    #(Tensor(F32)[], I64) #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]20
+    %2 : Tensor(Bool)[] = FuncGraph::fg_21(%1)    #(Tensor(Bool)[])    # fg_21=while_cond.21 #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]20
+    %3 : Func = Primitive::Switch{prim_type=1}(%2, FuncGraph::fg_3, FuncGraph::fg_22)    #(Tensor(Bool)[], Func, Func)    # fg_3=⥁train_one_episode.3, fg_22=↓train_one_episode.22 #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]23
+
+#------------------------> 2
+    %4 = %3() #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]24
+    Primitive::Return{prim_type=1}(%4)    #(Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]25
+}
+# order:
+#   1: ⤾train_one_episode.5:[CNode]20{[0]: [CNode]20, [1]: ValueNode<Int64Imm> 1000, [2]: ValueNode<Float> Float32}
+#   2: ⤾train_one_episode.5:[CNode]20{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Less, [1]: Φj, [2]: ValueNode<Int64Imm> 1000}
+#   3: ⤾train_one_episode.5:[CNode]20{[0]: ValueNode<FuncGraph> while_cond.21, [1]: [CNode]20}
+#   4: ⤾train_one_episode.5:[CNode]23{[0]: ValueNode<Primitive> Switch, [1]: [CNode]20, [2]: ValueNode<FuncGraph> ⥁train_one_episode.3, [3]: ValueNode<FuncGraph> ↓train_one_episode.22}
+#   5: ⤾train_one_episode.5:[CNode]24{[0]: [CNode]23}
+#   6: ⤾train_one_episode.5:[CNode]25{[0]: ValueNode<Primitive> Return, [1]: [CNode]24}
+
+
+# [No.4] ⥁train_one_episode.3
+# In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/
+funcgraph fg_3[fg_5](
+) {
+
+#------------------------> 3
+    %1 = FuncGraph::fg_6(%para64)    #(Tensor(F32)[144])    # fg_6=get_action.6 #scope: Default
+      # In file /app/src/ppo_trainer.py(63)/            action, miu, sigma = self.msrl.actors.get_action(state)/#[CNode]26
+    %2 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(0))    #(Undefined, Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(63)/            action, miu, sigma = self.msrl.actors.get_action(state)/#action
+    %3 = FuncGraph::fg_27(%2)    #(Undefined)    # fg_27=step.27 #scope: Default
+      # In file /app/src/ppo_trainer.py(64)/            new_state, reward, _ = self.msrl.collect_environment.step(action)/#[CNode]28
+    %4 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%3, I64(1))    #(Undefined, Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(64)/            new_state, reward, _ = self.msrl.collect_environment.step(action)/#reward
+    %5 = Primitive::getattr{prim_type=1}(%4, "expand_dims")    #(Undefined, Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(66)/                [state, action, reward.expand_dims(-1), new_state, miu, sigma]/#[CNode]29
+    %6 = DoSignaturePrimitive::S-Prim-negative{prim_type=1}(I64(1))    #(Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(66)/                [state, action, reward.expand_dims(-1), new_state, miu, sigma]/#[CNode]30
+    %7 = %5(%6)    #(Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(66)/                [state, action, reward.expand_dims(-1), new_state, miu, sigma]/#[CNode]31
+    %8 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%3, I64(0))    #(Undefined, Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(64)/            new_state, reward, _ = self.msrl.collect_environment.step(action)/#state
+    %9 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(1))    #(Undefined, Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(63)/            action, miu, sigma = self.msrl.actors.get_action(state)/#miu
+    %10 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(2))    #(Undefined, Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(63)/            action, miu, sigma = self.msrl.actors.get_action(state)/#sigma
+    %11 = DoSignaturePrimitive::S-Prim-make_list{prim_type=1}(%para64, %2, %7, %8, %9, %10)    #(Tensor(F32)[144], Undefined, Undefined, Undefined, Undefined, Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(66)/                [state, action, reward.expand_dims(-1), new_state, miu, sigma]/#[CNode]32
+    %12 = FuncGraph::fg_33(%11)    #(Undefined)    # fg_33=insert.33 #scope: Default
+      # In file /app/src/ppo_trainer.py(65)/            self.msrl.replay_buffer_insert(/#[CNode]34
+    %13 = Primitive::stop_gradient{prim_type=1}(%12)    #(Undefined) #scope: Default
+#[CNode]35
+    %14 = DoSignaturePrimitive::S-Prim-add{prim_type=1}(%para63, I64(1))    #(Tensor(F32)[], Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(71)/            j += 1/#j
+    %15 = DoSignaturePrimitive::S-Prim-ReduceMean{prim_type=1}[output_names=["y"], keep_dims=Bool(0), input_names=["input_x", "axis"]](%4)    #(Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(69)/            reward = self.reduce_mean(reward)/#reward
+    %16 = DoSignaturePrimitive::S-Prim-add{prim_type=1}(%para65, %15)    #(Tensor(F32)[], Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(70)/            training_reward += reward/#training_reward
+    %17 = FuncGraph::fg_5(%14, %8, %16)    #(Undefined, Undefined, Undefined)    # fg_5=⤾train_one_episode.5 #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]36
+    %18 = Primitive::Depend{prim_type=1}[side_effect_propagate=I64(1)](%17, %13)    #(Undefined, Undefined) #scope: Default
+#[CNode]37
+    Primitive::Return{prim_type=1}(%18)    #(Undefined) #scope: Default
+      # In file /app/src/ppo_trainer.py(62)/        while self.less(j, self.duration):/#[CNode]38
+}
+# order:
+#   1: ⥁train_one_episode.3:[CNode]26{[0]: ValueNode<FuncGraph> get_action.6, [1]: Φstate}
+#   2: ⥁train_one_episode.3:action{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]26, [2]: ValueNode<Int64Imm> 0}
+#   3: ⥁train_one_episode.3:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]26, [2]: ValueNode<Int64Imm> 1}
+#   4: ⥁train_one_episode.3:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]26, [2]: ValueNode<Int64Imm> 2}
+#   5: ⥁train_one_episode.3:[CNode]28{[0]: ValueNode<FuncGraph> step.27, [1]: action}
+#   6: ⥁train_one_episode.3:state{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]28, [2]: ValueNode<Int64Imm> 0}
+#   7: ⥁train_one_episode.3:reward{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]28, [2]: ValueNode<Int64Imm> 1}
+#   8: ⥁train_one_episode.3:[CNode]29{[0]: ValueNode<Primitive> getattr, [1]: reward, [2]: ValueNode<StringImm> expand_dims}
+#   9: ⥁train_one_episode.3:[CNode]30{[0]: ValueNode<DoSignaturePrimitive> S-Prim-negative, [1]: ValueNode<Int64Imm> 1}
+#  10: ⥁train_one_episode.3:[CNode]31{[0]: [CNode]29, [1]: [CNode]30}
+#  11: ⥁train_one_episode.3:[CNode]32{[0]: ValueNode<DoSignaturePrimitive> S-Prim-make_list, [1]: Φstate, [2]: action, [3]: [CNode]31, [4]: state, [5]: miu, [6]: sigma}
+#  12: ⥁train_one_episode.3:[CNode]34{[0]: ValueNode<FuncGraph> insert.33, [1]: [CNode]32}
+#  13: ⥁train_one_episode.3:reward{[0]: ValueNode<DoSignaturePrimitive> S-Prim-ReduceMean, [1]: reward}
+#  14: ⥁train_one_episode.3:training_reward{[0]: ValueNode<DoSignaturePrimitive> S-Prim-add, [1]: Φtraining_reward, [2]: reward}
+#  15: ⥁train_one_episode.3:j{[0]: ValueNode<DoSignaturePrimitive> S-Prim-add, [1]: Φj, [2]: ValueNode<Int64Imm> 1}
+#  16: ⥁train_one_episode.3:[CNode]36{[0]: ValueNode<FuncGraph> ⤾train_one_episode.5, [1]: j, [2]: state, [3]: training_reward}
+#  17: ⥁train_one_episode.3:[CNode]38{[0]: ValueNode<Primitive> Return, [1]: [CNode]37}
+
+
+# [No.5] get_action.6
+# In file /app/src/ppo.py(210)/    def get_action(self, params):/
+funcgraph fg_6[fg_1](
+        %para66 : Tensor(F32)[144]    # params
+    ) {
+
+#------------------------> 4
+    %1 = FuncGraph::fg_7(%para66)    #(Tensor(F32)[144])    # fg_7=construct.7 #scope: Default/msrl-MSRL/actors-PPOActor
+      # In file /app/src/ppo.py(212)/        action, miu, sigma = self.collect_policy(params)/#[CNode]39
+    %2 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(0))    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor
+      # In file /app/src/ppo.py(212)/        action, miu, sigma = self.collect_policy(params)/#action
+    %3 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(1))    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor
+      # In file /app/src/ppo.py(212)/        action, miu, sigma = self.collect_policy(params)/#miu
+    %4 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(2))    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor
+      # In file /app/src/ppo.py(212)/        action, miu, sigma = self.collect_policy(params)/#sigma
+    %5 = DoSignaturePrimitive::S-Prim-MakeTuple{prim_type=1}(%2, %3, %4)    #(Undefined, Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor
+      # In file /app/src/ppo.py(213)/        return action, miu, sigma/#[CNode]40
+    Primitive::Return{prim_type=1}(%5)    #(Undefined) #scope: Default/msrl-MSRL/actors-PPOActor
+      # In file /app/src/ppo.py(213)/        return action, miu, sigma/#[CNode]41
+}
+# order:
+#   1: get_action.6:[CNode]39{[0]: ValueNode<FuncGraph> construct.7, [1]: params}
+#   2: get_action.6:action{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]39, [2]: ValueNode<Int64Imm> 0}
+#   3: get_action.6:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]39, [2]: ValueNode<Int64Imm> 1}
+#   4: get_action.6:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]39, [2]: ValueNode<Int64Imm> 2}
+#   5: get_action.6:[CNode]40{[0]: ValueNode<DoSignaturePrimitive> S-Prim-MakeTuple, [1]: action, [2]: miu, [3]: sigma}
+#   6: get_action.6:[CNode]41{[0]: ValueNode<Primitive> Return, [1]: [CNode]40}
+
+
+# [No.6] construct.7
+# In file /app/src/ppo.py(140)/        def construct(self, params):/
+funcgraph fg_7[fg_1](
+        %para67 : Tensor(F32)[144]    # params
+    ) {
+
+#------------------------> 5
+    %1 = FuncGraph::fg_8(%para67)    #(Tensor(F32)[144])    # fg_8=construct.8 #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy
+      # In file /app/src/ppo.py(141)/            miu, sigma = self.actor_net(params)/#[CNode]42
+    %2 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(0))    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy
+      # In file /app/src/ppo.py(141)/            miu, sigma = self.actor_net(params)/#miu
+    %3 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(1))    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy
+      # In file /app/src/ppo.py(141)/            miu, sigma = self.actor_net(params)/#sigma
+    %4 = FuncGraph::fg_43((), %2, %3)    #(Undefined, Undefined, Undefined)    # fg_43=sample.43 #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy
+      # In file /app/src/ppo.py(142)/            action = self.norm_dist.sample((), miu, sigma)/#action
+    %5 = DoSignaturePrimitive::S-Prim-MakeTuple{prim_type=1}(%4, %2, %3)    #(Undefined, Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy
+      # In file /app/src/ppo.py(143)/            return action, miu, sigma/#[CNode]44
+    Primitive::Return{prim_type=1}(%5)    #(Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy
+      # In file /app/src/ppo.py(143)/            return action, miu, sigma/#[CNode]45
+}
+# order:
+#   1: construct.7:[CNode]42{[0]: ValueNode<FuncGraph> construct.8, [1]: params}
+#   2: construct.7:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]42, [2]: ValueNode<Int64Imm> 0}
+#   3: construct.7:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]42, [2]: ValueNode<Int64Imm> 1}
+#   4: construct.7:action{[0]: ValueNode<FuncGraph> sample.43, [1]: ValueNode<ValueTuple> (), [2]: miu, [3]: sigma}
+#   5: construct.7:[CNode]44{[0]: ValueNode<DoSignaturePrimitive> S-Prim-MakeTuple, [1]: action, [2]: miu, [3]: sigma}
+#   6: construct.7:[CNode]45{[0]: ValueNode<Primitive> Return, [1]: [CNode]44}
+
+
+# [No.7] construct.8
+# In file /app/src/ppo.py(76)/        def construct(self, x):/
+funcgraph fg_8[fg_1](
+        %para68 : Tensor(F32)[144]    # x
+    ) {
+    %1 : Tensor(I32)[1] = DoSignaturePrimitive::S-Prim-Print{prim_type=1}[side_effect_io=Bool(1)](%para68)    #(Tensor(F32)[144]) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(78)/            self.print(x)/#[CNode]46
+    %2 : Tensor(I32)[1] = Primitive::stop_gradient{prim_type=1}(%1)    #(Tensor(I32)[1]) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(141)/            miu, sigma = self.actor_net(params)/#[CNode]47
+
+#------------------------> 6
+    %3 = FuncGraph::fg_9(%para68)    #(Tensor(F32)[144])    # fg_9=construct.9 #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(79)/            x = self.tanh_actor(self.linear1_actor(x))/#[CNode]48
+    %4 = FuncGraph::fg_49(%3)    #(Undefined)    # fg_49=construct.49 #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(79)/            x = self.tanh_actor(self.linear1_actor(x))/#x
+    %5 = FuncGraph::fg_50(%4)    #(Undefined)    # fg_50=construct.50 #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(80)/            x = self.tanh_actor(self.linear2_actor(x))/#[CNode]51
+    %6 = FuncGraph::fg_49(%5)    #(Undefined)    # fg_49=construct.49 #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(80)/            x = self.tanh_actor(self.linear2_actor(x))/#x
+    %7 = FuncGraph::fg_52(%6)    #(Undefined)    # fg_52=construct.52 #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(81)/            miu = self.tanh_actor(self.linear_miu_actor(x))/#[CNode]53
+    %8 = FuncGraph::fg_49(%7)    #(Undefined)    # fg_49=construct.49 #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(81)/            miu = self.tanh_actor(self.linear_miu_actor(x))/#miu
+    %9 = DoSignaturePrimitive::S-Prim-negative{prim_type=1}(I64(1))    #(Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(83)/            miu = self.reshape(miu, (-1, 6))/#[CNode]54
+    %10 = DoSignaturePrimitive::S-Prim-MakeTuple{prim_type=1}(%9, I64(6))    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(83)/            miu = self.reshape(miu, (-1, 6))/#[CNode]55
+    %11 = DoSignaturePrimitive::S-Prim-Reshape{prim_type=1}[output_names=["output"], input_names=["tensor", "shape"]](%8, %10)    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(83)/            miu = self.reshape(miu, (-1, 6))/#miu
+    %12 = Primitive::getattr{prim_type=1}(%8, "shape")    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(82)/            miu_shape = miu.shape/#miu_shape
+    %13 = DoSignaturePrimitive::S-Prim-Reshape{prim_type=1}[output_names=["output"], input_names=["tensor", "shape"]](%11, %12)    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(89)/            miu = self.reshape(miu, miu_shape)/#miu
+    %14 = DoSignaturePrimitive::S-Prim-Cast{prim_type=1}[output_names=["output"], input_names=["x", "dst_type"]](%13, F32)    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(93)/            miu = self.cast(miu, mindspore.float32)/#miu
+    %15 = DoSignaturePrimitive::S-Prim-ZerosLike{prim_type=1}[output_names=["y"], input_names=["x"]](%11)    #(Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(87)/                self.bias_add(self.zeros_like(miu), bias_sigma_actor)/#[CNode]56
+    %16 = DoSignaturePrimitive::S-Prim-Cast{prim_type=1}[output_names=["output"], input_names=["x", "dst_type"]](%para13, F32)    #(Ref[Tensor(F32)][40], Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(85)/            bias_sigma_actor = self.cast(self.bias_sigma_actor, self.compute_type)/#bias_sigma_actor
+    %17 = DoSignaturePrimitive::S-Prim-BiasAdd{prim_type=1}[output_names=["output"], format="NCHW", input_names=["x", "b"]](%15, %16)    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(87)/                self.bias_add(self.zeros_like(miu), bias_sigma_actor)/#[CNode]57
+    %18 = DoSignaturePrimitive::S-Prim-Softplus{prim_type=1}[output_names=["output"], input_names=["x"]](%17)    #(Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(86)/            sigma = self.softplus_actor(/#sigma
+    %19 = DoSignaturePrimitive::S-Prim-Reshape{prim_type=1}[output_names=["output"], input_names=["tensor", "shape"]](%18, %12)    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(90)/            sigma = self.reshape(sigma, miu_shape)/#sigma
+    %20 = DoSignaturePrimitive::S-Prim-Cast{prim_type=1}[output_names=["output"], input_names=["x", "dst_type"]](%19, F32)    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(94)/            sigma = self.cast(sigma, mindspore.float32)/#sigma
+    %21 = DoSignaturePrimitive::S-Prim-MakeTuple{prim_type=1}(%14, %20)    #(Undefined, Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(95)/            return miu, sigma/#[CNode]58
+    %22 = Primitive::Depend{prim_type=1}[side_effect_propagate=I64(1)](%21, %2)    #(Undefined, Tensor(I32)[1]) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(141)/            miu, sigma = self.actor_net(params)/#[CNode]59
+    Primitive::Return{prim_type=1}(%22)    #(Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet
+      # In file /app/src/ppo.py(95)/            return miu, sigma/#[CNode]60
+}
+# order:
+#   1: construct.8:[CNode]46{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Print, [1]: x}
+#   2: construct.8:[CNode]48{[0]: ValueNode<FuncGraph> construct.9, [1]: x}
+#   3: construct.8:x{[0]: ValueNode<FuncGraph> construct.49, [1]: [CNode]48}
+#   4: construct.8:[CNode]51{[0]: ValueNode<FuncGraph> construct.50, [1]: x}
+#   5: construct.8:x{[0]: ValueNode<FuncGraph> construct.49, [1]: [CNode]51}
+#   6: construct.8:[CNode]53{[0]: ValueNode<FuncGraph> construct.52, [1]: x}
+#   7: construct.8:miu{[0]: ValueNode<FuncGraph> construct.49, [1]: [CNode]53}
+#   8: construct.8:miu_shape{[0]: ValueNode<Primitive> getattr, [1]: miu, [2]: ValueNode<StringImm> shape}
+#   9: construct.8:[CNode]54{[0]: ValueNode<DoSignaturePrimitive> S-Prim-negative, [1]: ValueNode<Int64Imm> 1}
+#  10: construct.8:[CNode]55{[0]: ValueNode<DoSignaturePrimitive> S-Prim-MakeTuple, [1]: [CNode]54, [2]: ValueNode<Int64Imm> 6}
+#  11: construct.8:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Reshape, [1]: miu, [2]: [CNode]55}
+#  12: construct.8:bias_sigma_actor{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Cast, [1]: learner.actor_net.bias_sigma_actor, [2]: ValueNode<Float> Float32}
+#  13: construct.8:[CNode]56{[0]: ValueNode<DoSignaturePrimitive> S-Prim-ZerosLike, [1]: miu}
+#  14: construct.8:[CNode]57{[0]: ValueNode<DoSignaturePrimitive> S-Prim-BiasAdd, [1]: [CNode]56, [2]: bias_sigma_actor}
+#  15: construct.8:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Softplus, [1]: [CNode]57}
+#  16: construct.8:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Reshape, [1]: miu, [2]: miu_shape}
+#  17: construct.8:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Reshape, [1]: sigma, [2]: miu_shape}
+#  18: construct.8:miu{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Cast, [1]: miu, [2]: ValueNode<Float> Float32}
+#  19: construct.8:sigma{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Cast, [1]: sigma, [2]: ValueNode<Float> Float32}
+#  20: construct.8:[CNode]58{[0]: ValueNode<DoSignaturePrimitive> S-Prim-MakeTuple, [1]: miu, [2]: sigma}
+#  21: construct.8:[CNode]60{[0]: ValueNode<Primitive> Return, [1]: [CNode]59}
+
+
+# [No.8] construct.9
+# In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(457)/    def construct(self, x):/
+funcgraph fg_9[fg_1](
+        %para69 : Tensor(F32)[144]    # x
+    ) {
+    %1 : Tensor(F32)[144] = Primitive::mixed_precision_cast{prim_type=1}(F32, %para69)    #(TypeType, Tensor(F32)[144]) #scope: Default
+#[CNode]61
+
+#------------------------> 7
+    %2 = FuncGraph::fg_10(%1, %para15, %para14)    #(Tensor(F32)[144], Ref[Tensor(F32)][200], Ref[Tensor(F32)][200, 144])    # fg_10=L-construct.10 #scope: Default
+#[CNode]62
+    Primitive::Return{prim_type=1}(%2)    #(Undefined) #scope: Default/msrl-MSRL/actors-PPOActor/collect_policy-CollectPolicy/actor_net-PPOActorNet/linear1_actor-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(460)/        if len(x_shape) != 2:/#[CNode]63
+}
+# order:
+#   1: construct.9:[CNode]61{[0]: ValueNode<Primitive> mixed_precision_cast, [1]: ValueNode<Float> Float32, [2]: x}
+#   2: construct.9:[CNode]62{[0]: ValueNode<FuncGraph> L-construct.10, [1]: [CNode]61, [2]: learner.actor_net.linear1_actor.bias, [3]: learner.actor_net.linear1_actor.weight}
+#   3: construct.9:[CNode]63{[0]: ValueNode<Primitive> Return, [1]: [CNode]62}
+
+
+# [No.9] L-construct.10
+# In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(457)/    def construct(self, x):/
+funcgraph fg_10(
+        %para70 : Tensor(F32)[144]    # x
+        , %para71 : Ref[Tensor(F32)][200]    # L-learner.critic_net.linear3_critic.bias
+        , %para72 : Ref[Tensor(F32)][200, 144]    # L-learner.critic_net.linear3_critic.weight
+    ) {
+    %1 : Tensor(F32)[144] = Primitive::mixed_precision_cast{prim_type=1}(F32, %para70)    #(TypeType, Tensor(F32)[144]) #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(457)/    def construct(self, x):/#64
+    %2 : Tuple[I64] = DoSignaturePrimitive::S-Prim-Shape{prim_type=1}(%1)    #(Tensor(F32)[144]) #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(467)/        if len(x_shape) != 2:/#Φx_shape
+
+#------------------------> 8
+    %3 = DoSignaturePrimitive::S-Prim-check_dense_input_shape{prim_type=1}(%2, "Dense")    #(Tuple[I64], String) #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(459)/        check_dense_input_shape(x_shape, self.cls_name)/#65
+    %4 = Primitive::stop_gradient{prim_type=1}(%3)    #(Undefined) #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /app/src/ppo.py(126)/            x = self.linear3_critic(x)/#66
+    %5 = FuncGraph::fg_67(%2)    #(Tuple[I64])    # fg_67=L-ms_len.67 #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(460)/        if len(x_shape) != 2:/#68
+    %6 = DoSignaturePrimitive::S-Prim-not_equal{prim_type=1}(%5, I64(2))    #(Undefined, Undefined) #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(460)/        if len(x_shape) != 2:/#69
+    %7 = FuncGraph::fg_70(%6)    #(Undefined)    # fg_70=L-bool_.70 #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(460)/        if len(x_shape) != 2:/#71
+    %8 = Primitive::Switch{prim_type=1}(%7, FuncGraph::fg_72, FuncGraph::fg_73)    #(Undefined, Undefined, Undefined)    # fg_72=L-✓construct.72, fg_73=L-✗construct.73 #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(460)/        if len(x_shape) != 2:/#74
+    %9 = %8() #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(460)/        if len(x_shape) != 2:/#75
+    %10 = FuncGraph::fg_76(%9)    #(Undefined)    # fg_76=L-↓construct.76 #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet
+      # In file /app/src/ppo.py(126)/            x = self.linear3_critic(x)/#77
+    %11 = Primitive::Depend{prim_type=1}[side_effect_propagate=I64(1)](%10, %4)    #(Undefined, Undefined) #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet
+      # In file /app/src/ppo.py(126)/            x = self.linear3_critic(x)/#78
+    Primitive::Return{prim_type=1}(%11)    #(Undefined) #scope: Default/msrl-MSRL/learner-PPOLearner/critic_net-PPOCriticNet/linear3_critic-Dense
+      # In file /usr/local/lib/python3.8/dist-packages/mindspore/nn/layer/basic.py(460)/        if len(x_shape) != 2:/#[CNode]79
+}
+# order:
+#   1: L-construct.10:64{[0]: ValueNode<Primitive> mixed_precision_cast, [1]: ValueNode<Float> Float32, [2]: x}
+#   2: L-construct.10:Φx_shape{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Shape, [1]: 64}
+#   3: L-construct.10:65{[0]: ValueNode<DoSignaturePrimitive> S-Prim-check_dense_input_shape, [1]: Φx_shape, [2]: ValueNode<StringImm> Dense}
+#   4: L-construct.10:68{[0]: ValueNode<FuncGraph> L-ms_len.67, [1]: Φx_shape}
+#   5: L-construct.10:69{[0]: ValueNode<DoSignaturePrimitive> S-Prim-not_equal, [1]: 68, [2]: ValueNode<Int64Imm> 2}
+#   6: L-construct.10:71{[0]: ValueNode<FuncGraph> L-bool_.70, [1]: 69}
+#   7: L-construct.10:74{[0]: ValueNode<Primitive> Switch, [1]: 71, [2]: ValueNode<FuncGraph> L-✓construct.72, [3]: ValueNode<FuncGraph> L-✗construct.73}
+#   8: L-construct.10:75{[0]: 74}
+#   9: L-construct.10:77{[0]: ValueNode<FuncGraph> L-↓construct.76, [1]: 75}
+#  10: L-construct.10:78{[0]: ValueNode<Primitive> Depend, [1]: 77, [2]: 66}
+#  11: L-construct.10:[CNode]79{[0]: ValueNode<Primitive> Return, [1]: 78}
+
+
+#===============================================================================
+# num of function graphs in stack: 9/10 (Ignored 1 internal frames).

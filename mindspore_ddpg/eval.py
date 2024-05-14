@@ -13,27 +13,27 @@
 # limitations under the License.
 # ============================================================================
 """
-D3DQN eval example.
+PPO eval example.
 """
 import argparse
 from src import config
-from src.d3dqn_trainer import D3DQNTrainer
+from src.ppo_trainer import PPOTrainer
 from mindspore_rl.core import Session
 from mindspore import context
 
-parser = argparse.ArgumentParser(description='MindSpore Reinforcement TD3')
+parser = argparse.ArgumentParser(description='MindSpore Reinforcement PPO')
 parser.add_argument('--device_target', type=str, default='Auto', choices=['Ascend', 'CPU', 'GPU', 'Auto'],
-                    help='Choose a device to run the td3 example(Default: Auto).')
+                    help='Choose a device to run the ppo example(Default: Auto).')
 parser.add_argument('--ckpt_path', type=str, default=None, help='The ckpt file in eval.')
 args = parser.parse_args()
 
-def d3dqn_eval():
+def ppo_eval():
     if args.device_target != 'Auto':
         context.set_context(device_target=args.device_target)
     context.set_context(mode=context.GRAPH_MODE)
     config.trainer_params.update({'ckpt_path': args.ckpt_path})
-    d3dqn_session = Session(config.algorithm_config)
-    d3dqn_session.run(class_type=D3DQNTrainer, is_train=False, params=config.trainer_params)
+    ac_session = Session(config.algorithm_config)
+    ac_session.run(class_type=ACTrainer, is_train=False, params=config.trainer_params)
 
 if __name__ == "__main__":
-    d3dqn_eval()
+    ppo_eval()

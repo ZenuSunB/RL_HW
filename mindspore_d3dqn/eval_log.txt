@@ -1,0 +1,7 @@
+At the end, own_hp 0: opp_hp 343. you lose.
+At the end, own_hp 0: opp_hp 318. you lose.
+At the end, own_hp 0: opp_hp 400. you lose.
+-----------------------------------------
+Evaluate result is -31.223, checkpoint file in /home/zenu/code/rl_hw/mindspore_d3dqn/ckpt/policy_net_1600.ckpt
+-----------------------------------------
+eval end
