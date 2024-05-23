@@ -1,0 +1,305 @@
+1
+-0.919994
+2
+0.22
+3
+7.41
+4
+25.18
+5
+25.42
+6
+14.67
+7
+24.08
+8
+22.23
+9
+18.43
+10
+18.27
+11
+17.26
+12
+15.84
+13
+11.72
+14
+18.32
+15
+16.15
+16
+20.92
+17
+29.91
+18
+23.54
+19
+25.72
+20
+24.92
+21
+5.98
+22
+16.78
+23
+24.18
+24
+19
+25
+6.9
+26
+25.79
+27
+11.08
+28
+20.58
+29
+24.4
+30
+18.03
+31
+13.92
+32
+16.74
+33
+25.86
+34
+-0.360002
+35
+1.77
+36
+7.22
+37
+22.23
+38
+12.8
+39
+25.38
+40
+16.65
+41
+9.63
+42
+5.35
+43
+25.84
+44
+25.52
+45
+12.71
+46
+21.1
+47
+25.04
+48
+30.42
+49
+12.54
+50
+19.37
+51
+13.1
+52
+10.28
+53
+12.15
+54
+23.79
+55
+-5.05
+56
+21.59
+57
+24.55
+58
+31.42
+59
+10.72
+60
+24.34
+61
+20.21
+62
+19.45
+63
+10.03
+64
+26.66
+65
+17.44
+66
+11.67
+67
+7.86
+68
+22.91
+69
+20.81
+70
+17.25
+71
+-9
+72
+19.51
+73
+12.3
+74
+9.44001
+75
+16.6
+76
+10.83
+77
+13.89
+78
+28.99
+79
+14.04
+80
+30.21
+81
+14.93
+82
+10.7
+83
+16.15
+84
+26.42
+85
+13.42
+86
+18.24
+87
+20.68
+88
+25.1
+89
+23.59
+90
+7.56
+91
+8.56
+92
+22.01
+93
+14.34
+94
+21.31
+95
+22.79
+96
+21.91
+97
+15.29
+98
+17.04
+99
+18.71
+100
+5.56999
+Load file  ./ckpt/dqn_policy_net/policy_net_2000.ckpt
+At the end, own_hp 0: opp_hp 11. you lose.
+At the end, own_hp 7: opp_hp 0. you win.
+At the end, own_hp 80: opp_hp 0. you win.
+At the end, own_hp 273: opp_hp 0. you win.
+At the end, own_hp 278: opp_hp 0. you win.
+At the end, own_hp 156: opp_hp 0. you win.
+At the end, own_hp 251: opp_hp 0. you win.
+At the end, own_hp 227: opp_hp 0. you win.
+At the end, own_hp 196: opp_hp 0. you win.
+At the end, own_hp 184: opp_hp 0. you win.
+At the end, own_hp 177: opp_hp 0. you win.
+At the end, own_hp 168: opp_hp 0. you win.
+At the end, own_hp 122: opp_hp 0. you win.
+At the end, own_hp 188: opp_hp 0. you win.
+At the end, own_hp 165: opp_hp 0. you win.
+At the end, own_hp 219: opp_hp 0. you win.
+At the end, own_hp 305: opp_hp 0. you win.
+At the end, own_hp 249: opp_hp 0. you win.
+At the end, own_hp 262: opp_hp 0. you win.
+At the end, own_hp 250: opp_hp 0. you win.
+At the end, own_hp 68: opp_hp 0. you win.
+At the end, own_hp 186: opp_hp 0. you win.
+At the end, own_hp 245: opp_hp 0. you win.
+At the end, own_hp 227: opp_hp 0. you win.
+At the end, own_hp 87: opp_hp 0. you win.
+At the end, own_hp 260: opp_hp 0. you win.
+At the end, own_hp 144: opp_hp 0. you win.
+At the end, own_hp 208: opp_hp 0. you win.
+At the end, own_hp 248: opp_hp 0. you win.
+At the end, own_hp 216: opp_hp 0. you win.
+At the end, own_hp 155: opp_hp 0. you win.
+At the end, own_hp 193: opp_hp 0. you win.
+At the end, own_hp 260: opp_hp 0. you win.
+At the end, own_hp 19: opp_hp 0. you win.
+At the end, own_hp 0: opp_hp 49. you lose.
+At the end, own_hp 78: opp_hp 0. you win.
+At the end, own_hp 237: opp_hp 0. you win.
+At the end, own_hp 140: opp_hp 0. you win.
+At the end, own_hp 256: opp_hp 0. you win.
+At the end, own_hp 191: opp_hp 0. you win.
+At the end, own_hp 113: opp_hp 0. you win.
+At the end, own_hp 60: opp_hp 0. you win.
+At the end, own_hp 262: opp_hp 0. you win.
+At the end, own_hp 257: opp_hp 0. you win.
+At the end, own_hp 131: opp_hp 0. you win.
+At the end, own_hp 214: opp_hp 0. you win.
+At the end, own_hp 254: opp_hp 0. you win.
+At the end, own_hp 316: opp_hp 0. you win.
+At the end, own_hp 136: opp_hp 0. you win.
+At the end, own_hp 207: opp_hp 0. you win.
+At the end, own_hp 135: opp_hp 0. you win.
+At the end, own_hp 104: opp_hp 0. you win.
+At the end, own_hp 145: opp_hp 0. you win.
+At the end, own_hp 257: opp_hp 0. you win.
+At the end, own_hp 0: opp_hp 74. you lose.
+At the end, own_hp 220: opp_hp 0. you win.
+At the end, own_hp 252: opp_hp 0. you win.
+At the end, own_hp 316: opp_hp 0. you win.
+At the end, own_hp 112: opp_hp 0. you win.
+At the end, own_hp 250: opp_hp 0. you win.
+At the end, own_hp 215: opp_hp 0. you win.
+At the end, own_hp 206: opp_hp 0. you win.
+At the end, own_hp 136: opp_hp 0. you win.
+At the end, own_hp 290: opp_hp 0. you win.
+At the end, own_hp 178: opp_hp 0. you win.
+At the end, own_hp 125: opp_hp 0. you win.
+At the end, own_hp 82: opp_hp 0. you win.
+At the end, own_hp 244: opp_hp 0. you win.
+At the end, own_hp 244: opp_hp 0. you win.
+At the end, own_hp 186: opp_hp 0. you win.
+At the end, own_hp 0: opp_hp 187. you lose.
+At the end, own_hp 196: opp_hp 0. you win.
+At the end, own_hp 130: opp_hp 0. you win.
+At the end, own_hp 96: opp_hp 0. you win.
+At the end, own_hp 174: opp_hp 0. you win.
+At the end, own_hp 117: opp_hp 0. you win.
+At the end, own_hp 155: opp_hp 0. you win.
+At the end, own_hp 292: opp_hp 0. you win.
+At the end, own_hp 147: opp_hp 0. you win.
+At the end, own_hp 306: opp_hp 0. you win.
+At the end, own_hp 180: opp_hp 0. you win.
+At the end, own_hp 112: opp_hp 0. you win.
+At the end, own_hp 166: opp_hp 0. you win.
+At the end, own_hp 294: opp_hp 0. you win.
+At the end, own_hp 138: opp_hp 0. you win.
+At the end, own_hp 186: opp_hp 0. you win.
+At the end, own_hp 247: opp_hp 0. you win.
+At the end, own_hp 252: opp_hp 0. you win.
+At the end, own_hp 237: opp_hp 0. you win.
+At the end, own_hp 83: opp_hp 0. you win.
+At the end, own_hp 0: opp_hp 3. you lose.
+At the end, own_hp 240: opp_hp 0. you win.
+At the end, own_hp 169: opp_hp 0. you win.
+At the end, own_hp 232: opp_hp 0. you win.
+At the end, own_hp 234: opp_hp 0. you win.
+At the end, own_hp 232: opp_hp 0. you win.
+At the end, own_hp 162: opp_hp 0. you win.
+At the end, own_hp 178: opp_hp 0. you win.
+At the end, own_hp 193: opp_hp 0. you win.
+At the end, own_hp 65: opp_hp 0. you win.
+-----------------------------------------
+Evaluate result is 16.941, checkpoint file in ./ckpt/dqn_policy_net/policy_net_2000.ckpt
+-----------------------------------------
+eval end

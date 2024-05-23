@@ -51,20 +51,16 @@ class ACTrainer(Trainer):
         total_reward = self.zero
         steps = self.zero
         loss = self.zero_value
-        while True:
+        while not done:
             done, r, state_, a = self.msrl.agent_act(trainer.COLLECT, state)
-            r = self.squeeze(r)
-            total_reward += r
-            if done:
-                # r = self.done_r
-                break
-            loss = self.msrl.agent_learn([state, r, state_, a])
+            total_reward += self.squeeze(r)
+            loss = self.msrl.agent_learn([state, r, state_, a, done])
             state = state_
             steps += 1
-            # if done:
-            #     break
         return loss, total_reward, steps
-
+    
+    
+        
     @ms_function
     def evaluate(self):
         '''evaluate'''
@@ -78,6 +74,7 @@ class ACTrainer(Trainer):
                 done, r, state = self.msrl.agent_act(trainer.EVAL, state)
                 r = self.squeeze(r)
                 episode_reward += r
+            print(episode_reward)
             total_reward += episode_reward
             eval_iter += 1
         avg_reward = total_reward / self.num_evaluate_episode

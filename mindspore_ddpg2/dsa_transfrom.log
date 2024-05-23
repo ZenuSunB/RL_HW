@@ -1,0 +1,22 @@
+
+>>>>>>>>>> group_filter_map <<<<<<<<<<
+
+>>>>>>>>>> dependences <<<<<<<<<<
+{ S_0[cc0] -> S_1[cc1 = cc0] : 0 <= cc0 <= 39 }
+
+>>>>>>>>>> constraints <<<<<<<<<<
+domain: "{ S_0[cc0] : 0 <= cc0 <= 39;"
+          "S_1[cc1] : 0 <= cc1 <= 39 }"
+validity: "{ S_0[cc0] -> S_1[cc1 = cc0] : 0 <= cc0 <= 39 }"
+proximity: "{ S_0[cc0] -> S_1[cc1 = cc0] : 0 <= cc0 <= 39 }"
+coincidence: "{ S_0[cc0] -> S_1[cc1 = cc0] : 0 <= cc0 <= 39 }"
+
+>>>>>>>>>> time_records <<<<<<<<<<
+[ Polyhedral exec time ], InitSchedule spent 3.6841 ms
+[ Polyhedral exec time ], ConstrainSchedule spent 2.94561 ms
+[ Polyhedral exec time ], ComputeSchedule spent 0.919561 ms
+[ Polyhedral exec time ], AnalyzeSchedule spent 0.699872 ms
+[ Polyhedral exec time ], TileOuterBand spent 14.369 ms
+[ Polyhedral exec time ], CpuMemoryManager spent 0.001328 ms
+[ Polyhedral exec time ], RealizeManager spent 0.024046 ms
+8284 ms

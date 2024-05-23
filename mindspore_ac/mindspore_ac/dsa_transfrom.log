@@ -1,0 +1,15 @@
+
+>>>>>>>>>> group_filter_map <<<<<<<<<<
+
+>>>>>>>>>> dependences <<<<<<<<<<
+{  }
+
+>>>>>>>>>> constraints <<<<<<<<<<
+domain: "{ S_0[] }"
+
+>>>>>>>>>> time_records <<<<<<<<<<
+[ Polyhedral exec time ], InitSchedule spent 0.196794 ms
+[ Polyhedral exec time ], ConstrainSchedule spent 0.098286 ms
+[ Polyhedral exec time ], ComputeSchedule spent 0.020351 ms
+[ Polyhedral exec time ], AnalyzeSchedule spent 0.020244 ms
+[ Polyhedral exec time ], TileOuterBand spent 0.127226 ms

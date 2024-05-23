@@ -117,15 +117,12 @@ class TD3Policy:
             self.tanh = P.Tanh()
             self.soft_max = ops.Softmax()
             self.relu = P.ReLU()
-            self.gumbel_softmax = ops.gumbel_softmax
             
 
         def construct(self, x):
             x = self.relu(self.dense1(x))
             x = self.relu(self.dense2(x))
-            # x = self.tanh(self.dense3(x))
-            # x = self.soft_max(self.dense3(x))
-            x = self.gumbel_softmax(self.dense3(x),0.01,True)
+            x = self.softmax(self.dense3(x),0.01,True)
             return x
 
     class TD3CriticNet(nn.Cell):
@@ -134,7 +131,6 @@ class TD3Policy:
         def __init__(
             self,
             obs_size,
-            action_size,
             hidden_size1,
             hidden_size2,
             output_size,
@@ -150,7 +146,7 @@ class TD3Policy:
                 obs_size, hidden_size1, weight_init=weight_init
             ).to_float(compute_type)
             self.dense2 = nn.Dense(
-                hidden_size1 + action_size, hidden_size2, weight_init=weight_init
+                hidden_size1, hidden_size2, weight_init=weight_init
             ).to_float(compute_type)
             last_weight_init = Uniform(scale=0.003)
             self.dense3 = nn.Dense(
@@ -167,8 +163,6 @@ class TD3Policy:
 
         def construct(self, observation, action):
             q = self.relu(self.dense1(observation))
-            action = self.cast(action, q.dtype)
-            q = self.concat((q, action))
             q = self.relu(self.dense2(q))
             q = self.dense3(q)
 
@@ -194,7 +188,6 @@ class TD3Policy:
         )
         self.critic_net_1 = self.TD3CriticNet(
             params["state_space_dim"],
-            1,
             params["hidden_size1"],
             params["hidden_size2"],
             1,
@@ -203,7 +196,6 @@ class TD3Policy:
         )
         self.critic_net_2 = self.TD3CriticNet(
             params["state_space_dim"],
-            1,
             params["hidden_size1"],
             params["hidden_size2"],
             1,
@@ -212,7 +204,6 @@ class TD3Policy:
         )
         self.target_critic_net_1 = self.TD3CriticNet(
             params["state_space_dim"],
-            1,
             params["hidden_size1"],
             params["hidden_size2"],
             1,
@@ -221,7 +212,6 @@ class TD3Policy:
         )
         self.target_critic_net_2 = self.TD3CriticNet(
             params["state_space_dim"],
-            1,
             params["hidden_size1"],
             params["hidden_size2"],
             1,
@@ -333,26 +323,18 @@ class TD3Learner(Learner):
             self.cast = P.Cast()
             self.soft_max = ops.Softmax()
             self.expand_dims = P.ExpandDims()
-        def construct(self, obs, action, rewards, next_obs, done):
+        def construct(self, obs, rewards, next_obs, done):
             """calculate the critic loss"""
-            target_action_probs = self.target_actor_net(next_obs)
-            target_action = self.argmax(target_action_probs)
-            noisy_target_action = target_action + self.noises(target_action)
-            noisy_target_action = C.clip_by_value(
-                noisy_target_action, self.low, self.high
-            )
-            noisy_target_action = self.cast(noisy_target_action,mindspore.int32)
-            noisy_target_action = self.expand_dims(noisy_target_action, -1)
-        
-            target_q1_values = self.target_critic_net_1(next_obs, noisy_target_action)
-            target_q2_values = self.target_critic_net_2(next_obs, noisy_target_action)
+
+            target_q1_values = self.target_critic_net_1(next_obs)
+            target_q2_values = self.target_critic_net_2(next_obs)
             target_q_values = self.min(target_q1_values, target_q2_values)
             
             td_targets = rewards + self.gamma * (1.0 - done) * target_q_values
 
             # predicted values
-            pred_q1 = self.critic_net_1(obs, action)
-            pred_q2 = self.critic_net_2(obs, action)
+            pred_q1 = self.critic_net_1(obs)
+            pred_q2 = self.critic_net_2(obs)
             critic_loss = self._loss(pred_q1, td_targets) + self._loss(pred_q2, td_targets)
             return critic_loss
 
@@ -367,18 +349,25 @@ class TD3Learner(Learner):
             self.argmax = P.Argmax(output_type=mindspore.int32)
             self.reshape = P.Reshape()
             self.one_hot = ops.OneHot()
+            self.add = ops.Add()
+            self.mul = ops.Mul()
+            self.log = ops.Log()
             self.soft_max = ops.Softmax()
             self.expand_dims = P.ExpandDims()
-            self.indices = Parameter(initializer(self.expand_dims(ops.arange(0,40),0),[1,40], mindspore.int32), "indices",False,)
-        def construct(self, obs):
+            self.sub = ops.Sub()
+            self.neg = ops.Neg()
+            
+        def construct(self, reward, action, obs, next_obs):
             """calculate the actor loss"""
             action_probs = self.actor_net(obs)
-            # action_soft_onehot = self.soft_max(action_probs* self.beta) 
-            action_soft_onehot_M_indices = action_probs * self.indices
-            action = action_soft_onehot_M_indices.sum(axis=-1,keepdims=True) 
-            q_values = self.critic_net(obs, action)
-            q_values = - q_values
-            actor_loss = self.reduce_mean(q_values)
+            obs_values = self.critic_net(obs)
+            next_obs_values = self.critic_net(next_obs)
+            choosed_action_prob = [action_probs[i][action[i]] for i in range(len(action))]
+            choosed_action_log_prob = self.log(choosed_action_prob)
+            td_error = self.sub(
+                self.add(reward, self.mul(0.9,next_obs_values)), 
+                obs_values)
+            actor_loss = self.neg(self.reduce_mean(choosed_action_log_prob*td_error))
             return actor_loss
 
     def __init__(self, params):
@@ -467,15 +456,12 @@ class TD3Learner(Learner):
         """TD3 learners"""
         self.plus(self.step, 1)
         obs, action, rewards, next_obs, done = experience
-        critic_loss = self.critic_train(obs, action, rewards, next_obs, done)
-
+        critic_loss = self.critic_train(obs, rewards, next_obs, done)
         actor_update_condition = self.mod(self.step, self.actor_update_interval)
         if self.equal(actor_update_condition, self.zero):
-            actor_loss = self.actor_train(obs)
+            actor_loss = self.actor_train(rewards, action, obs,next_obs)
         else:
-            actor_loss = self.actor_loss_cell(obs)
-            
+            actor_loss = self.actor_loss_cell(rewards, action, obs,next_obs)
         self.soft_updater()
-
         total_loss = critic_loss + actor_loss
         return total_loss

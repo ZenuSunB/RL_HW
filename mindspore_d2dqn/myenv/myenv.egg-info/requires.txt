@@ -1,0 +1,4 @@
+gym===0.15.3
+py4j==0.10.9.5
+port-for
+opencv-python==4.2.0.34

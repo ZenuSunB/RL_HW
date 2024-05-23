@@ -109,5 +109,6 @@ class D3DQNTrainer(Trainer):
                 episode_reward += r
             total_reward += episode_reward
             eval_iter += 1
+            print(episode_reward)
         avg_reward = total_reward / self.num_evaluate_episode
         return avg_reward

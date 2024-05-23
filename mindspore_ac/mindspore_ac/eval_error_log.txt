@@ -1,0 +1,1778 @@
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving

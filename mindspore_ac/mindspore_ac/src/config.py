@@ -23,10 +23,10 @@ env_params = {'name': 'FightingiceEnv-v0', 'seed': 42}
 policy_params = {
     'state_space_dim': 144,
     'action_space_dim': 40,
-    'hidden_size': 128,
+    'hidden_size': 512,
 }
 trainer_params = {
-    'num_evaluate_episode': 3,
+    'num_evaluate_episode': 100,
     'ckpt_path': './ckpt',
 }
 learner_params = {

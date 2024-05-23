@@ -1,0 +1,205 @@
+-25.65
+-24.94
+-22.95
+-5.88999
+-23.65
+-20.25
+0
+-17.45
+-27.85
+-22.57
+-18.66
+-16.37
+-20.43
+-23.82
+-4.93002
+-21.2
+-19.91
+-17.21
+-17.77
+-5.71002
+-17.24
+-23.47
+-24.71
+-31.78
+-25.18
+-23.21
+-6.16001
+-17.94
+-23.92
+-31.67
+-27.0701
+-14.58
+-20.2
+-25.61
+-25.4
+-12.3
+-17.8
+-24.43
+-29.91
+-31.53
+-27.65
+-19.78
+-11.82
+-15.62
+-23.07
+-30.7
+-21.3
+-14.27
+-22.56
+-20.32
+-23.1
+-19.76
+-24.27
+-17.84
+-28.68
+-14.44
+-20.79
+-18.43
+-18.76
+-19.26
+-18.63
+-16.54
+-29.72
+-12.91
+-14.48
+-14.97
+-8.68001
+-21.69
+-21.08
+-17.58
+-19.59
+-13.91
+-18.82
+-19.02
+-29.98
+-21.54
+-16.01
+-21.48
+-7.80001
+-28.35
+-21.23
+-26.4
+-15.92
+-14.82
+-19.37
+-23.03
+-19.82
+-11.96
+-10.03
+-23.94
+-27.46
+-24.68
+-29.31
+-13.95
+-25.29
+-29.02
+-19.47
+-27.61
+-13.56
+-29.08
+Load file  ./ckpt/actor_net/actor_net_2000.ckpt
+At the end, own_hp 0: opp_hp 255. you lose.
+At the end, own_hp 0: opp_hp 260. you lose.
+At the end, own_hp 0: opp_hp 230. you lose.
+At the end, own_hp 60: opp_hp 115. you lose.
+At the end, own_hp 0: opp_hp 235. you lose.
+At the end, own_hp 0: opp_hp 190. you lose.
+can't receive signals within 60 seconds. let's terminate gym env.
+At the end, own_hp 0: opp_hp 220. you lose.
+At the end, own_hp 0: opp_hp 290. you lose.
+At the end, own_hp 40: opp_hp 260. you lose.
+At the end, own_hp 0: opp_hp 185. you lose.
+At the end, own_hp 0: opp_hp 215. you lose.
+At the end, own_hp 0: opp_hp 285. you lose.
+At the end, own_hp 77: opp_hp 320. you lose.
+At the end, own_hp 152: opp_hp 195. you lose.
+At the end, own_hp 0: opp_hp 235. you lose.
+At the end, own_hp 0: opp_hp 260. you lose.
+At the end, own_hp 0: opp_hp 192. you lose.
+At the end, own_hp 109: opp_hp 275. you lose.
+At the end, own_hp 138: opp_hp 185. you lose.
+At the end, own_hp 0: opp_hp 245. you lose.
+At the end, own_hp 0: opp_hp 240. you lose.
+At the end, own_hp 34: opp_hp 265. you lose.
+At the end, own_hp 0: opp_hp 315. you lose.
+At the end, own_hp 0: opp_hp 245. you lose.
+At the end, own_hp 0: opp_hp 230. you lose.
+At the end, own_hp 0: opp_hp 115. you lose.
+At the end, own_hp 0: opp_hp 295. you lose.
+At the end, own_hp 23: opp_hp 260. you lose.
+At the end, own_hp 11: opp_hp 320. you lose.
+At the end, own_hp 0: opp_hp 255. you lose.
+At the end, own_hp 0: opp_hp 145. you lose.
+At the end, own_hp 113: opp_hp 315. you lose.
+At the end, own_hp 0: opp_hp 257. you lose.
+At the end, own_hp 0: opp_hp 260. you lose.
+At the end, own_hp 0: opp_hp 190. you lose.
+At the end, own_hp 0: opp_hp 172. you lose.
+At the end, own_hp 0: opp_hp 260. you lose.
+At the end, own_hp 0: opp_hp 285. you lose.
+At the end, own_hp 0: opp_hp 305. you lose.
+At the end, own_hp 0: opp_hp 270. you lose.
+At the end, own_hp 0: opp_hp 205. you lose.
+At the end, own_hp 0: opp_hp 195. you lose.
+At the end, own_hp 0: opp_hp 225. you lose.
+At the end, own_hp 0: opp_hp 235. you lose.
+At the end, own_hp 0: opp_hp 305. you lose.
+At the end, own_hp 0: opp_hp 235. you lose.
+At the end, own_hp 40: opp_hp 170. you lose.
+At the end, own_hp 0: opp_hp 265. you lose.
+At the end, own_hp 0: opp_hp 230. you lose.
+At the end, own_hp 0: opp_hp 260. you lose.
+At the end, own_hp 4: opp_hp 202. you lose.
+At the end, own_hp 61: opp_hp 300. you lose.
+At the end, own_hp 0: opp_hp 170. you lose.
+At the end, own_hp 0: opp_hp 285. you lose.
+At the end, own_hp 5: opp_hp 145. you lose.
+At the end, own_hp 0: opp_hp 215. you lose.
+At the end, own_hp 0: opp_hp 230. you lose.
+At the end, own_hp 82: opp_hp 265. you lose.
+At the end, own_hp 0: opp_hp 247. you lose.
+At the end, own_hp 0: opp_hp 190. you lose.
+At the end, own_hp 68: opp_hp 230. you lose.
+At the end, own_hp 2: opp_hp 292. you lose.
+At the end, own_hp 0: opp_hp 235. you lose.
+At the end, own_hp 0: opp_hp 170. you lose.
+At the end, own_hp 0: opp_hp 220. you lose.
+At the end, own_hp 0: opp_hp 185. you lose.
+At the end, own_hp 0: opp_hp 225. you lose.
+At the end, own_hp 0: opp_hp 210. you lose.
+At the end, own_hp 0: opp_hp 210. you lose.
+At the end, own_hp 0: opp_hp 220. you lose.
+At the end, own_hp 0: opp_hp 135. you lose.
+At the end, own_hp 0: opp_hp 185. you lose.
+At the end, own_hp 0: opp_hp 195. you lose.
+At the end, own_hp 0: opp_hp 310. you lose.
+At the end, own_hp 0: opp_hp 220. you lose.
+At the end, own_hp 23: opp_hp 180. you lose.
+At the end, own_hp 0: opp_hp 215. you lose.
+At the end, own_hp 0: opp_hp 165. you lose.
+At the end, own_hp 0: opp_hp 275. you lose.
+At the end, own_hp 0: opp_hp 225. you lose.
+At the end, own_hp 0: opp_hp 270. you lose.
+At the end, own_hp 127: opp_hp 279. you lose.
+At the end, own_hp 0: opp_hp 230. you lose.
+At the end, own_hp 0: opp_hp 175. you lose.
+At the end, own_hp 0: opp_hp 240. you lose.
+At the end, own_hp 0: opp_hp 240. you lose.
+At the end, own_hp 43: opp_hp 150. you lose.
+At the end, own_hp 0: opp_hp 207. you lose.
+At the end, own_hp 0: opp_hp 240. you lose.
+At the end, own_hp 0: opp_hp 270. you lose.
+At the end, own_hp 13: opp_hp 272. you lose.
+At the end, own_hp 0: opp_hp 280. you lose.
+At the end, own_hp 0: opp_hp 215. you lose.
+At the end, own_hp 0: opp_hp 270. you lose.
+At the end, own_hp 0: opp_hp 285. you lose.
+At the end, own_hp 0: opp_hp 190. you lose.
+At the end, own_hp 0: opp_hp 275. you lose.
+At the end, own_hp 73: opp_hp 190. you lose.
+At the end, own_hp 0: opp_hp 285. you lose.
+-----------------------------------------
+Evaluate result is -20.225, checkpoint file in ./ckpt/actor_net/actor_net_2000.ckpt
+-----------------------------------------
+eval end

@@ -2,6 +2,8 @@ mindspore_ac/mindspore_ac/data
 mindspore_ac/mindspore_ac/kernel_meta
 mindspore_ac/mindspore_ac/lib
 mindspore_ac/mindspore_ac/log
+mindspore_ac/mindspore_ac/ckpt_old
+mindspore_ac/mindspore_ac/ckpt
 
 mindspore_dqn/mindspore_dqn/ckpt
 mindspore_dqn/mindspore_dqn/data
@@ -29,9 +31,34 @@ mindspore_ppo/data
 mindspore_ppo/kernel_meta
 mindspore_ppo/lib
 
-
 mindspore_ddpg/ckpt
 mindspore_ddpg/log
 mindspore_ddpg/data
 mindspore_ddpg/kernel_meta
 mindspore_ddpg/lib
+
+
+mindspore_ddpg2/ckpt
+mindspore_ddpg2/log
+mindspore_ddpg2/data
+mindspore_ddpg2/kernel_meta
+mindspore_ddpg2/lib
+
+mindspore_d2dqn/ckpt
+mindspore_d2dqn/log
+mindspore_d2dqn/data
+mindspore_d2dqn/kernel_meta
+mindspore_d2dqn/lib
+
+
+mindspore_sac/ckpt
+mindspore_sac/log
+mindspore_sac/data
+mindspore_sac/kernel_meta
+mindspore_sac/lib
+
+*.jar
+*.key
+*.dat
+*.DS_Store
+__pycache__

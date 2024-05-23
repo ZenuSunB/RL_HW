@@ -24,7 +24,7 @@ learner_params = {"gamma": 0.9, "lr": 0.001}
 trainer_params = {
     'buffer_num_before_learning_begin': 32,
     'update_target_iter': 100,
-    "num_evaluate_episode": 3,
+    "num_evaluate_episode": 100,
     "ckpt_path": "./ckpt",
 }
 

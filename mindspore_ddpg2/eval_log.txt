@@ -1,0 +1,405 @@
+Load file  ./ckpt/actor_net/actor_net_30.ckpt
+At the end, own_hp 0: opp_hp 204. you lose.
+-12.86
+At the end, own_hp 0: opp_hp 290. you lose.
+-28.400002
+can't receive signals within 60 seconds. let's terminate gym env.
+0.0
+At the end, own_hp 0: opp_hp 195. you lose.
+-17.61
+At the end, own_hp 0: opp_hp 320. you lose.
+-31.820004
+At the end, own_hp 0: opp_hp 243. you lose.
+-24.190004
+At the end, own_hp 0: opp_hp 198. you lose.
+-18.259996
+At the end, own_hp 0: opp_hp 340. you lose.
+-33.929996
+At the end, own_hp 0: opp_hp 275. you lose.
+-25.63
+At the end, own_hp 0: opp_hp 272. you lose.
+-27.060001
+At the end, own_hp 0: opp_hp 387. you lose.
+-37.489998
+At the end, own_hp 0: opp_hp 192. you lose.
+-16.98
+At the end, own_hp 0: opp_hp 290. you lose.
+-28.400002
+At the end, own_hp 0: opp_hp 233. you lose.
+-23.420002
+At the end, own_hp 0: opp_hp 289. you lose.
+-27.89
+At the end, own_hp 0: opp_hp 225. you lose.
+-20.82
+At the end, own_hp 0: opp_hp 355. you lose.
+-29.130001
+At the end, own_hp 0: opp_hp 230. you lose.
+-17.520004
+At the end, own_hp 0: opp_hp 349. you lose.
+-34.38
+At the end, own_hp 0: opp_hp 310. you lose.
+-30.630001
+At the end, own_hp 0: opp_hp 295. you lose.
+-28.740004
+At the end, own_hp 0: opp_hp 242. you lose.
+-24.02
+At the end, own_hp 0: opp_hp 305. you lose.
+-29.430004
+At the end, own_hp 0: opp_hp 170. you lose.
+-15.219998
+At the end, own_hp 0: opp_hp 325. you lose.
+-26.810001
+At the end, own_hp 0: opp_hp 259. you lose.
+-23.850002
+At the end, own_hp 0: opp_hp 295. you lose.
+-28.41
+At the end, own_hp 0: opp_hp 180. you lose.
+-17.34
+At the end, own_hp 0: opp_hp 237. you lose.
+-23.21
+At the end, own_hp 0: opp_hp 252. you lose.
+-24.89
+At the end, own_hp 0: opp_hp 325. you lose.
+-32.08
+At the end, own_hp 0: opp_hp 285. you lose.
+-27.269999
+At the end, own_hp 0: opp_hp 264. you lose.
+-24.56
+At the end, own_hp 0: opp_hp 207. you lose.
+-20.140001
+At the end, own_hp 0: opp_hp 179. you lose.
+-17.610003
+At the end, own_hp 0: opp_hp 235. you lose.
+-22.060001
+At the end, own_hp 0: opp_hp 240. you lose.
+-23.279999
+At the end, own_hp 0: opp_hp 390. you lose.
+-30.180004
+At the end, own_hp 0: opp_hp 285. you lose.
+-26.73
+At the end, own_hp 0: opp_hp 285. you lose.
+-27.960003
+At the end, own_hp 0: opp_hp 212. you lose.
+-20.11
+At the end, own_hp 0: opp_hp 219. you lose.
+-20.570002
+At the end, own_hp 0: opp_hp 300. you lose.
+-29.299997
+At the end, own_hp 0: opp_hp 250. you lose.
+-18.94
+At the end, own_hp 0: opp_hp 263. you lose.
+-25.29
+can't receive signals within 60 seconds. let's terminate gym env.
+0.0
+At the end, own_hp 0: opp_hp 255. you lose.
+-21.85
+At the end, own_hp 0: opp_hp 365. you lose.
+-34.130005
+At the end, own_hp 0: opp_hp 300. you lose.
+-29.27
+At the end, own_hp 0: opp_hp 197. you lose.
+-11.1500025
+At the end, own_hp 0: opp_hp 282. you lose.
+-28.110003
+At the end, own_hp 0: opp_hp 190. you lose.
+-16.150003
+At the end, own_hp 0: opp_hp 172. you lose.
+-16.619999
+At the end, own_hp 0: opp_hp 260. you lose.
+-26.289999
+At the end, own_hp 0: opp_hp 315. you lose.
+-30.320004
+At the end, own_hp 0: opp_hp 250. you lose.
+-23.400002
+At the end, own_hp 0: opp_hp 220. you lose.
+-21.450003
+At the end, own_hp 0: opp_hp 257. you lose.
+-24.120003
+At the end, own_hp 0: opp_hp 307. you lose.
+-27.039999
+At the end, own_hp 0: opp_hp 228. you lose.
+-22.200003
+At the end, own_hp 0: opp_hp 290. you lose.
+-20.099997
+At the end, own_hp 0: opp_hp 270. you lose.
+-26.090004
+At the end, own_hp 0: opp_hp 350. you lose.
+-26.91
+At the end, own_hp 0: opp_hp 295. you lose.
+-26.6
+At the end, own_hp 0: opp_hp 223. you lose.
+-21.799997
+At the end, own_hp 0: opp_hp 255. you lose.
+-20.019997
+At the end, own_hp 0: opp_hp 265. you lose.
+-20.840002
+At the end, own_hp 0: opp_hp 190. you lose.
+-17.7
+At the end, own_hp 0: opp_hp 310. you lose.
+-29.48
+At the end, own_hp 0: opp_hp 269. you lose.
+-26.980005
+At the end, own_hp 0: opp_hp 262. you lose.
+-25.72
+At the end, own_hp 0: opp_hp 177. you lose.
+-17.11
+At the end, own_hp 0: opp_hp 232. you lose.
+-23.180002
+At the end, own_hp 0: opp_hp 180. you lose.
+-16.880001
+At the end, own_hp 0: opp_hp 242. you lose.
+-15.030001
+At the end, own_hp 0: opp_hp 152. you lose.
+-7.419997
+At the end, own_hp 0: opp_hp 292. you lose.
+-29.030003
+At the end, own_hp 0: opp_hp 310. you lose.
+-29.340002
+At the end, own_hp 0: opp_hp 200. you lose.
+-19.160002
+At the end, own_hp 0: opp_hp 137. you lose.
+-13.460001
+At the end, own_hp 0: opp_hp 168. you lose.
+-16.52
+At the end, own_hp 0: opp_hp 275. you lose.
+-27.310001
+At the end, own_hp 0: opp_hp 265. you lose.
+-26.070002
+At the end, own_hp 0: opp_hp 254. you lose.
+-24.25
+At the end, own_hp 0: opp_hp 247. you lose.
+-20.399998
+At the end, own_hp 0: opp_hp 340. you lose.
+-29.550001
+At the end, own_hp 0: opp_hp 307. you lose.
+-29.850002
+At the end, own_hp 0: opp_hp 340. you lose.
+-22.999998
+At the end, own_hp 0: opp_hp 255. you lose.
+-23.23
+At the end, own_hp 0: opp_hp 192. you lose.
+-18.380005
+At the end, own_hp 0: opp_hp 197. you lose.
+-12.360001
+At the end, own_hp 0: opp_hp 262. you lose.
+-19.370003
+At the end, own_hp 0: opp_hp 340. you lose.
+-32.149998
+At the end, own_hp 0: opp_hp 244. you lose.
+-23.159998
+At the end, own_hp 0: opp_hp 215. you lose.
+-19.26
+At the end, own_hp 0: opp_hp 235. you lose.
+-23.109997
+At the end, own_hp 0: opp_hp 305. you lose.
+-29.269995
+At the end, own_hp 0: opp_hp 249. you lose.
+-23.909998
+At the end, own_hp 0: opp_hp 310. you lose.
+-30.020002
+can't receive signals within 60 seconds. let's terminate gym env.
+0.01
+At the end, own_hp 0: opp_hp 240. you lose.
+-22.3
+At the end, own_hp 0: opp_hp 213. you lose.
+-20.439999
+At the end, own_hp 0: opp_hp 315. you lose.
+-22.800001
+At the end, own_hp 0: opp_hp 295. you lose.
+-28.930002
+At the end, own_hp 0: opp_hp 298. you lose.
+-22.200003
+At the end, own_hp 0: opp_hp 335. you lose.
+-32.61001
+At the end, own_hp 0: opp_hp 345. you lose.
+-34.05
+At the end, own_hp 0: opp_hp 255. you lose.
+-14.860001
+At the end, own_hp 0: opp_hp 267. you lose.
+-26.029999
+At the end, own_hp 0: opp_hp 310. you lose.
+-30.300007
+At the end, own_hp 0: opp_hp 249. you lose.
+-23.800001
+At the end, own_hp 0: opp_hp 347. you lose.
+-34.46001
+At the end, own_hp 0: opp_hp 172. you lose.
+-12.6500025
+At the end, own_hp 0: opp_hp 265. you lose.
+-16.049997
+At the end, own_hp 0: opp_hp 282. you lose.
+-27.18
+At the end, own_hp 0: opp_hp 217. you lose.
+-21.130003
+At the end, own_hp 0: opp_hp 232. you lose.
+-23.090004
+At the end, own_hp 0: opp_hp 280. you lose.
+-25.970001
+At the end, own_hp 0: opp_hp 250. you lose.
+-23.800001
+At the end, own_hp 0: opp_hp 226. you lose.
+-21.729998
+At the end, own_hp 0: opp_hp 272. you lose.
+-23.240007
+At the end, own_hp 0: opp_hp 307. you lose.
+-25.360004
+At the end, own_hp 0: opp_hp 200. you lose.
+-19.869993
+At the end, own_hp 0: opp_hp 300. you lose.
+-28.93
+At the end, own_hp 0: opp_hp 328. you lose.
+-23.01
+At the end, own_hp 0: opp_hp 357. you lose.
+-32.700005
+At the end, own_hp 0: opp_hp 157. you lose.
+-14.67
+At the end, own_hp 0: opp_hp 375. you lose.
+-26.780003
+At the end, own_hp 0: opp_hp 172. you lose.
+-11.860002
+At the end, own_hp 0: opp_hp 210. you lose.
+-20.439997
+At the end, own_hp 0: opp_hp 305. you lose.
+-28.77
+can't receive signals within 60 seconds. let's terminate gym env.
+0.0
+At the end, own_hp 0: opp_hp 340. you lose.
+-25.780003
+At the end, own_hp 0: opp_hp 315. you lose.
+-30.69
+At the end, own_hp 0: opp_hp 265. you lose.
+-18.420002
+At the end, own_hp 0: opp_hp 259. you lose.
+-24.510004
+At the end, own_hp 0: opp_hp 291. you lose.
+-26.659998
+At the end, own_hp 0: opp_hp 245. you lose.
+-12.720001
+At the end, own_hp 0: opp_hp 218. you lose.
+-17.05
+At the end, own_hp 0: opp_hp 292. you lose.
+-20.66
+At the end, own_hp 0: opp_hp 273. you lose.
+-26.859999
+At the end, own_hp 0: opp_hp 212. you lose.
+-20.76
+At the end, own_hp 0: opp_hp 205. you lose.
+-19.93
+At the end, own_hp 0: opp_hp 267. you lose.
+-25.509998
+At the end, own_hp 0: opp_hp 117. you lose.
+-11.3
+At the end, own_hp 0: opp_hp 283. you lose.
+-26.580004
+At the end, own_hp 0: opp_hp 270. you lose.
+-26.94
+At the end, own_hp 0: opp_hp 240. you lose.
+-15.67
+At the end, own_hp 0: opp_hp 335. you lose.
+-33.15
+At the end, own_hp 0: opp_hp 301. you lose.
+-18.230001
+At the end, own_hp 0: opp_hp 292. you lose.
+-30.519997
+At the end, own_hp 0: opp_hp 142. you lose.
+-8.090001
+At the end, own_hp 0: opp_hp 337. you lose.
+-33.22
+At the end, own_hp 0: opp_hp 347. you lose.
+-33.170002
+At the end, own_hp 0: opp_hp 245. you lose.
+-22.829998
+At the end, own_hp 0: opp_hp 262. you lose.
+-25.34
+At the end, own_hp 0: opp_hp 177. you lose.
+-16.829996
+At the end, own_hp 0: opp_hp 302. you lose.
+-29.160002
+At the end, own_hp 0: opp_hp 127. you lose.
+-11.66
+At the end, own_hp 0: opp_hp 293. you lose.
+-29.029999
+At the end, own_hp 0: opp_hp 252. you lose.
+-23.369999
+At the end, own_hp 0: opp_hp 370. you lose.
+-35.840004
+At the end, own_hp 0: opp_hp 330. you lose.
+-32.85
+At the end, own_hp 0: opp_hp 342. you lose.
+-25.389996
+At the end, own_hp 0: opp_hp 270. you lose.
+-25.530005
+At the end, own_hp 0: opp_hp 262. you lose.
+-25.920002
+At the end, own_hp 0: opp_hp 245. you lose.
+-23.480003
+At the end, own_hp 0: opp_hp 285. you lose.
+-28.07
+At the end, own_hp 0: opp_hp 278. you lose.
+-22.330002
+At the end, own_hp 0: opp_hp 170. you lose.
+-16.36
+At the end, own_hp 0: opp_hp 275. you lose.
+-27.199999
+At the end, own_hp 0: opp_hp 138. you lose.
+-13.36
+At the end, own_hp 0: opp_hp 317. you lose.
+-20.249998
+At the end, own_hp 0: opp_hp 309. you lose.
+-30.080002
+At the end, own_hp 0: opp_hp 260. you lose.
+-25.630001
+At the end, own_hp 0: opp_hp 317. you lose.
+-30.16
+can't receive signals within 60 seconds. let's terminate gym env.
+-8.030003
+At the end, own_hp 0: opp_hp 252. you lose.
+-23.530003
+At the end, own_hp 0: opp_hp 293. you lose.
+-28.239994
+At the end, own_hp 0: opp_hp 250. you lose.
+-13.039998
+At the end, own_hp 0: opp_hp 365. you lose.
+-35.730003
+At the end, own_hp 0: opp_hp 257. you lose.
+-21.429996
+At the end, own_hp 0: opp_hp 220. you lose.
+-21.940002
+At the end, own_hp 0: opp_hp 310. you lose.
+-30.600002
+At the end, own_hp 0: opp_hp 317. you lose.
+-31.29
+At the end, own_hp 0: opp_hp 182. you lose.
+-14.78
+At the end, own_hp 0: opp_hp 245. you lose.
+-24.27
+At the end, own_hp 0: opp_hp 258. you lose.
+-24.76
+At the end, own_hp 0: opp_hp 312. you lose.
+-30.700003
+At the end, own_hp 0: opp_hp 182. you lose.
+-16.650002
+At the end, own_hp 0: opp_hp 385. you lose.
+-34.73
+At the end, own_hp 0: opp_hp 345. you lose.
+-34.100006
+At the end, own_hp 0: opp_hp 232. you lose.
+-22.280006
+At the end, own_hp 0: opp_hp 333. you lose.
+-32.939995
+At the end, own_hp 0: opp_hp 328. you lose.
+-22.990004
+At the end, own_hp 0: opp_hp 200. you lose.
+-8.540002
+can't receive signals within 60 seconds. let's terminate gym env.
+-25.4
+At the end, own_hp 0: opp_hp 310. you lose.
+-28.15
+At the end, own_hp 0: opp_hp 245. you lose.
+-22.320002
+At the end, own_hp 0: opp_hp 318. you lose.
+-21.740004
+-----------------------------------------
+Average evaluate result is -25.319, checkpoint file in ./ckpt/actor_net/actor_net_30.ckpt
+-----------------------------------------
+eval end

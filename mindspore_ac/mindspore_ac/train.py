@@ -25,7 +25,7 @@ from mindspore_rl.core import Session
 from mindspore_rl.utils.callback import CheckpointCallback, LossCallback, EvaluateCallback
 
 parser = argparse.ArgumentParser(description='MindSpore Reinforcement AC')
-parser.add_argument('--episode', type=int, default=1000, help='total episode numbers.')
+parser.add_argument('--episode', type=int, default=2000, help='total episode numbers.')
 parser.add_argument('--device_target', type=str, default='Auto', choices=['Ascend', 'CPU', 'GPU', 'Auto'],
                     help='Choose a device to run the ac example(Default: Auto).')
 options, _ = parser.parse_known_args()

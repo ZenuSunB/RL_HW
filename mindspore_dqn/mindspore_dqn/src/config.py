@@ -25,7 +25,7 @@ learner_params = {'gamma': 0.9, 'lr': 0.001,}
 trainer_params = {
     'buffer_num_before_learning_begin': 32,
     'update_target_iter': 100,
-    'num_evaluate_episode': 2,
+    'num_evaluate_episode': 100,
     'ckpt_path': './ckpt',
 }
 
@@ -50,7 +50,7 @@ policy_params = {
     'decay': 200,
     'state_space_dim': 144,
     'action_space_dim': 40,
-    'hidden_size': 128,
+    'hidden_size': 512,
 }
 
 algorithm_config = {

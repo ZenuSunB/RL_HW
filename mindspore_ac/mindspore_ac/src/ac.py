@@ -22,8 +22,8 @@ import mindspore.nn.probability.distribution as msd
 from mindspore.ops import operations as P
 from mindspore_rl.agent.learner import Learner
 from mindspore_rl.agent.actor import Actor
+from mindspore.ops import stop_gradient
 import numpy as np
-
 seed = 16
 np.random.seed(seed)
 
@@ -48,7 +48,7 @@ class ACPolicyAndNetwork():
     class CriticNet(nn.Cell):
         '''CriticNet'''
 
-        def __init__(self, input_size, hidden_size, output_size=1):
+        def __init__(self, input_size, hidden_size, output_size):
             super().__init__()
             self.common = nn.Dense(input_size, hidden_size, weight_init='XavierUniform')
             self.critic = nn.Dense(hidden_size, output_size, weight_init='XavierUniform')
@@ -90,10 +90,12 @@ class ACPolicyAndNetwork():
 
 
     def __init__(self, params):
-        self.actor_net = self.ActorNet(params['state_space_dim'], params['hidden_size'],
+        self.actor_net = self.ActorNet(params['state_space_dim'], 
+                                       params['hidden_size'],
                                        params['action_space_dim'])
-        self.critic_net = self.CriticNet(
-            params['state_space_dim'], params['hidden_size'])
+        self.critic_net = self.CriticNet(params['state_space_dim'],
+                                         params['hidden_size'],
+                                         params['action_space_dim'])
 
         self.collect_policy = self.CollectPolicy(self.actor_net)
         self.eval_policy = self.EvalPolicy(self.actor_net)
@@ -120,15 +122,17 @@ class ACActor(Actor):
             # Sample action to act in env
             ts0 = self.expand_dims(params, 0)
             action = self.collect_policy(ts0)
+            action = self.cast(action, mindspore.int32)
             new_state, reward, done = self._environment.step(
-                self.cast(action, mindspore.int32))
+                action)
             return done, reward, new_state, action
         if phase == 3:
             # Evaluate the trained policy
             ts0 = self.expand_dims(params, 0)
             action = self.eval_policy(ts0)
+            action = self.cast(action, mindspore.int32)
             new_state, reward, done = self._eval_env.step(
-                self.cast(action, mindspore.int32))
+                action)
             return done, reward, new_state
 
         self.print("Phase is incorrect")
@@ -162,9 +166,10 @@ class ACLearner(Learner):
     class CriticNNLoss(nn.Cell):
         '''Critic loss'''
 
-        def __init__(self, critic_net, gamma):
+        def __init__(self, critic_net, actor_net, gamma):
             super().__init__(auto_prefix=False)
             self.critic_net = critic_net
+            self.actor_net = actor_net
             self.square = ops.Square()
             self.gamma = gamma
             self.squeeze = ops.Squeeze()
@@ -172,13 +177,23 @@ class ACLearner(Learner):
             self.add = ops.Add()
             self.sub = ops.Sub()
             self.expand_dims = ops.ExpandDims()
-
-        def construct(self, state, r, v_):
-            v = self.critic_net(self.expand_dims(state, 0))
-            v = self.squeeze(v)
-            v_ = self.squeeze(v_)
-            td_error = self.sub(self.add(r, self.mul(self.gamma, v_)), v)
+            self.mse = nn.MSELoss(reduction="none")
+            self.square = ops.Square()
+            self.reshape = ops.Reshape()
+            self.gather = P.GatherD()       
+        def construct(self, next_state, reward, done, state, action):
+                    
+            next_action_probs_t = self.actor_net(next_state)
+            next_state_q_values = self.critic_net(next_state)
+            
+            next_state_target_q_value = (next_action_probs_t*next_state_q_values).sum(axis=1, keepdims=False)
+            td_target = reward + self.gamma * (1 - done) * next_state_target_q_value
+            td_target = stop_gradient(td_target)
+            pred_td_target = self.gather(self.critic_net(state), 1, action)
+            pred_td_target = pred_td_target[0]
+            td_error = self.sub(td_target, pred_td_target)
             critic_loss = self.square(td_error)
+            
             return critic_loss
 
 
@@ -197,7 +212,7 @@ class ACLearner(Learner):
         self.actor_net_train = nn.TrainOneStepCell(actor_loss_net, optimizer_a)
         self.actor_net_train.set_train(mode=True)
         critic_loss_net = self.CriticNNLoss(
-            self.critic_net, self.gamma)
+            self.critic_net, self.actor_net, self.gamma)
         self.critic_net_train = nn.TrainOneStepCell(
             critic_loss_net, optimizer_c)
         self.critic_net_train.set_train(mode=True)
@@ -208,18 +223,31 @@ class ACLearner(Learner):
         self.reshape = ops.Reshape()
         self.expand_dims = ops.ExpandDims()
         self.squeeze = P.Squeeze()
-
+        self.gather = P.GatherD()       
     def learn(self, experience):
         '''Calculate the td_error'''
         state = experience[0]
-        r = experience[1]
-        state_ = experience[2]
-        a = experience[3]
-        v_ = self.critic_net(self.expand_dims(state_, 0))
-        v = self.critic_net(self.expand_dims(state, 0))
-        v_ = self.squeeze(v_)
-        v = self.squeeze(v)
-        td_error = self.sub(self.add(r, self.mul(self.gamma, v_)), v)
-        critic_loss = self.critic_net_train(state, r, v_)
-        actor_loss = self.actor_net_train(state, td_error, a)
-        return actor_loss + critic_loss
+        reward = experience[1]
+        next_state = experience[2]
+        action = experience[3]
+        done = experience[4]
+        action = self.expand_dims(action,0)
+        state = self.expand_dims(state,0)
+        next_state = self.expand_dims(next_state,0)
+        critic_loss = self.critic_net_train(next_state, reward, done, state, action)
+        
+        
+        next_action_probs_t = self.actor_net(next_state)
+        next_state_q_values = self.critic_net(next_state)
+        
+        next_state_target_q_value = (next_action_probs_t*next_state_q_values).sum(axis=1, keepdims=False)
+        td_target = reward + self.gamma * (1 - done) * next_state_target_q_value
+        
+        pred_td_target = self.gather(self.critic_net(state), 1, action)
+        pred_td_target = pred_td_target[0]
+        
+        td_error = self.sub(td_target, pred_td_target)
+        
+        actor_loss = self.actor_net_train(state, td_error, action)
+        total_loss = critic_loss+actor_loss
+        return total_loss
